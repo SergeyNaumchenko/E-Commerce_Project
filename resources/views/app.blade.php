@@ -26,10 +26,10 @@
     {{--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">--}}
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    {{--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>--}}
+    <!--[if lt IE 9]><!--<script src="js/ie8-responsive-file-warning.js"></script>--><![endif]-->
+    {{--<script src="js/ie-emulation-modes-warning.js"></script>--}}
 
-    <script src="/js/ie-emulation-modes-warning.js"></script>
+    {{--<script src="/js/ie-emulation-modes-warning.js"></script>--}}
 
 
     <!-- Custom styles for this template -->

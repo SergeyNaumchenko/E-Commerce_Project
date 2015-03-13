@@ -57,10 +57,12 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
-                            <form class="webdesigntuts-workshop" action="" method="">
-                                <input type="search" placeholder="Search...">
-                                <button>Search</button>
-                            </form>
+                        <li>
+                        <form class="webdesigntuts-workshop" action="" method="">
+                            <input class="webdesigntuts-workshop" type="search" placeholder="Search...">
+                            <button><span class="glyphicon glyphicon-search"></span></button>
+                        </form>
+                        </li>
                         <li><a href="{{ url('/auth/login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 						<li><a href="{{ url('/auth/register') }}"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                     @else

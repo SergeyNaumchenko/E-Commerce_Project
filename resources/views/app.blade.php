@@ -52,28 +52,25 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">Home</a></li>
+					<li><a href="{{ url('/') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 				</ul>
-
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
-                        <li>
-                        <form class="webdesigntuts-workshop" action="" method="">
-                            <input class="webdesigntuts-workshop" type="search" placeholder="Search...">
-                            <button><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
-                        </li>
                         <li><a href="{{ url('/auth/login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-						<li><a href="{{ url('/auth/register') }}"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+                        <li><a href="{{ url('/auth/register') }}"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                     @else
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                        <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><span class="glyphicon glyphicon-user"></span> {{ Auth::user()->name }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+								<li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 							</ul>
 						</li>
-					@endif
+                        <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-cog"></span></a></li>
+                    @endif
 				</ul>
+                <form class="navbar-form navbar-right" action="" method="">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
 			</div>
 		</div>
 	</nav>

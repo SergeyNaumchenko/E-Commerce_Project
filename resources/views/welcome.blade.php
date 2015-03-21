@@ -23,11 +23,11 @@
             </div>
         </div>
         <div class="item">
-            <img src="img/secondSlide.jpg" alt="Second slide">
+            <img src="img/secondSlide.jpeg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>March event 2015</h1>
-                    <p>Experience the keynote</p>
+                    <h1>Shot on iPhone 6</h1>
+                    <p>View the World Gallery World Gallery</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                 </div>
             </div>

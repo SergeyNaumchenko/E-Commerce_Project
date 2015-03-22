@@ -7,13 +7,12 @@
 	<title>Laravel</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/search.css') }}" rel="stylesheet">
-
 
     <!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -24,18 +23,9 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <!-- Latest compiled and minified CSS -->
-    {{--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">--}}
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><!--<script src="js/ie8-responsive-file-warning.js"></script>--><![endif]-->
-    {{--<script src="js/ie-emulation-modes-warning.js"></script>--}}
-
-    {{--<script src="/js/ie-emulation-modes-warning.js"></script>--}}
-
-
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/carousel.css') }}" rel="stylesheet">
+
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -47,8 +37,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Laravel</a>
-			</div>
+				{{--<a class="navbar-brand" href="#">Laravel</a>--}}
+                <a class="navbar-brand" href="#"><img src="img/icon.png"></a>
+            </div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
@@ -60,12 +51,22 @@
                         <li><a href="{{ url('/auth/register') }}"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                     @else
                         <li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><span class="glyphicon glyphicon-user"></span> {{ Auth::user()->name }} <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-							</ul>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="true"><span
+                                        class="glyphicon glyphicon-user"></span> {{ ucfirst(Auth::user()->name) }} <span
+                                        class="caret"></span></a>
+                            <ul class="dropdown-menu">
+								<li><a href="{{ url('#') }}">View Account</a></li>
+                                <li class="divider"></li>
+                                <li><a href="{{ url('#') }}">Favorites</a></li>
+                                <li class="divider"></li>
+                                <li><a href="{{ url('#') }}">Check Order Status</a></li>
+                            </ul>
 						</li>
+                        <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-inbox"></span></a></li>
                         <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-cog"></span></a></li>
+                        <li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span></a></li>
                     @endif
 				</ul>
                 <form class="navbar-form navbar-right" action="" method="">

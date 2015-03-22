@@ -13,7 +13,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="img/firstSlide.jpg" alt="First slide">
+            <img src="" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Ultimate Home Audio Event.</h1>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="img/secondSlide.jpeg" alt="Second slide">
+            <img src="" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Shot on iPhone 6</h1>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="img/thirdSlide.jpg" alt="Third slide">
+            <img src="" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>One more for good measure.</h1>
@@ -89,11 +89,11 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">The world’s most advanced desktop operating system.</h2>
+            <p class="lead">Easy to use, beautiful to look at and engineered to take full advantage of your Mac hardware, OS X Yosemite is the world’s most advanced desktop operating system. It comes with an amazing collection of apps for the things you do every day. And it’s designed to enable your Mac and iOS devices to work together in amazing ways.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" src="img/iMacs.jpeg" alt="Generic placeholder image">
         </div>
     </div>
 
@@ -101,7 +101,7 @@
 
     <div class="row featurette">
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" src="img/macbookpro.jpg" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
             <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
@@ -117,7 +117,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" src="img/macbookpro.jpg" alt=" alt="Generic placeholder image">
         </div>
     </div>
 

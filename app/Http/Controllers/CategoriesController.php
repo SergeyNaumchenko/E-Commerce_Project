@@ -1,7 +1,13 @@
-<?php
+<?php namespace App\Http\Controllers;
 
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
-class CategoriesController extends BaseController
+use Illuminate\Http\Request;
+use View;
+use App\Category;
+
+class CategoriesController extends Controller
 {
 
     public function __construct()
@@ -42,4 +48,5 @@ class CategoriesController extends BaseController
                 ->with('message', 'Whoops! Something went wrong, please try again');
         }
     }
+
 }

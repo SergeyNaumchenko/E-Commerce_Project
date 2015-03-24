@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('content')
+@section('categories')
     <div id="admin">
         <h1>Categories Admin Panel</h1>\
         <p>Here you can view, delete, and create new categories.</p>
@@ -11,7 +11,7 @@
                 <li>
                     {{ $category->name }} -
                     {{ Form::open(array('url'=>'admin/categories/destroy', 'class'=>'form-inline')) }}
-                    {{ From::hidden('id', $category->id) }}
+                    {{ Form::hidden('id', $category->id) }}
                     {{ Form::submit('delete') }}
                     {{ Form::close() }}
                 </li>
@@ -36,7 +36,7 @@
 
         {{ Form::open(array('url'=>'admin/categories/create')) }}
         <p>
-            {{ From::label('name') }}
+            {{ Form::label('name') }}
             {{ Form::text('name') }}
         </p>
         {{ Form::submit('Create Category', array('class'=>'secondary-cart-btn')) }}

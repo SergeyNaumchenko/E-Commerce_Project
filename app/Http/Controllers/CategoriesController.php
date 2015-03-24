@@ -5,7 +5,10 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use View;
+use Validator;
 use App\Category;
+use Input;
+use Redirect;
 
 class CategoriesController extends Controller
 {
@@ -23,7 +26,7 @@ class CategoriesController extends Controller
 
     public function postCreate()
     {
-        $validator = Validator::make(Input::all(), Category::rules);
+        $validator = Validator::make(Input::all(), Category::$rules);
 
         if ($validator->passes()) {
             $category = new Category;
@@ -34,8 +37,8 @@ class CategoriesController extends Controller
             return Redirect::to('admin/categories/index')->with('message', 'Category Created');
         }
 
-        return Redirect::to('admin/categorie/index')->with('message', 'Oh Snap! Something went wrong')
-            ->withErrors($validator)->wihtInput();
+        return Redirect::to('admin/categories/index')->with('message', 'Oh Snap! Something went wrong')
+            ->withErrors($validator)->withInput();
     }
 
     public function postDestroy()

@@ -37,8 +37,8 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				{{--<a class="navbar-brand" href="#">Laravel</a>--}}
-                <a class="navbar-brand" href="#"><img src="img/icon.png"></a>
+
+                    {!! HTML::image('img/icon.png') !!}
             </div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -1,45 +1,70 @@
 @extends('app')
 
 @section('categories')
-    <div id="admin">
-        <h1>Categories Admin Panel</h1>\
-        <p>Here you can view, delete, and create new categories.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Categories</div>
+                    <div class="panel-body">
+                        @if (count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <h2>Categories</h2>
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Category</th>
+                                <th>Delete Category</th>
+                            </tr>
+                            </thead>
 
-        <h2>Categories</h2>
-        <ul>
-            @foreach($categories as $category)
-                <li>
-                    {{ $category->name }} -
-                    {{ Form::open(array('url'=>'admin/categories/destroy', 'class'=>'form-inline')) }}
-                    {{ Form::hidden('id', $category->id) }}
-                    {{ Form::submit('delete') }}
-                    {{ Form::close() }}
-                </li>
-            @endforeach
-        </ul>
+                            <tbody>
+                            @foreach($categories as $category)
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        {!! ucFirst($category->name) !!}
+                                        {!! Form::open(array('url'=>'admin/categories/destroy')) !!}
+                                        {!! Form::hidden('id', $category->id) !!}
+                                    </td>
+                                    <td>
+                                        {!! Form::submit('delete', array('class'=>'btn btn-default')) !!}
+                                        {!! Form::close() !!}
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </table>
+                        <h2>Create new Category</h2>
+                        <hr>
 
+                            {!! Form::open(array('url'=>'admin/categories/create', 'class'=>'form-horizontal', 'role'=>'form'))
+                            !!}
 
-        <h2>Create new Categorie</h2>
-        <hr>
-
-        @if($errors->has())
-            <div id="form-errors">
-                <p>The following errors have occurred:</p>
-
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div><!--end form-errors-->
-        @endif
-
-        {{ Form::open(array('url'=>'admin/categories/create')) }}
-        <p>
-            {{ Form::label('name') }}
-            {{ Form::text('name') }}
-        </p>
-        {{ Form::submit('Create Category', array('class'=>'secondary-cart-btn')) }}
-        {{ Form::close() }}
-    </div> <!--end admin-->
+                            <div class="form-group">
+                                {!! Form::label('name', '', array('class'=>'col-md-4 control-label')) !!}
+                                <div class="col-md-6">
+                                    {!! Form::text('name', '', array('class'=>'form-control', 'value'=>'category')) !!}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-4">
+                                    {!! Form::submit('Create Category', array('class'=>'btn btn-primary')) !!}
+                                    {!! Form::close() !!}
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 @stop

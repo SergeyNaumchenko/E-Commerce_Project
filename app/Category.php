@@ -7,7 +7,7 @@ class Category extends Model
 
     protected $fillable = array('name');
 
-    public static $rules = array('name' => 'required|min:3, unique|max:255');
+    public static $rules = array('name' => 'required|min:3|unique:categories');
 }
 
 

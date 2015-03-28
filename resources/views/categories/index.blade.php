@@ -37,7 +37,7 @@
                                         {!! Form::hidden('id', $category->id) !!}
                                     </td>
                                     <td>
-                                        {!! Form::submit('delete', array('class'=>'btn btn-default')) !!}
+                                        {!! Form::submit('Delete', array('class'=>'btn btn-default')) !!}
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>
@@ -46,8 +46,7 @@
                         <h2>Create new Category</h2>
                         <hr>
 
-                            {!! Form::open(array('url'=>'admin/categories/create', 'class'=>'form-horizontal', 'role'=>'form'))
-                            !!}
+                            {!! Form::open(array('url'=>'admin/categories/create', 'class'=>'form-horizontal', 'role'=>'form')) !!}
 
                             <div class="form-group">
                                 {!! Form::label('name', '', array('class'=>'col-md-4 control-label')) !!}

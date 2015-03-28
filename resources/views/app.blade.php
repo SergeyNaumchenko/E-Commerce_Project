@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
-	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    {!! HTML::style('/css/app.css') !!}
+    {{--<link href="{{ asset('/css/app.css') }}" rel="stylesheet">--}}
 
     <!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -24,7 +25,8 @@
     <link rel="icon" href="../../favicon.ico">
 
     <!-- Custom styles for this template -->
-    <link href="{{ asset('/css/carousel.css') }}" rel="stylesheet">
+    {{--<link href="{{ asset('/css/carousel.css') }}" rel="stylesheet">--}}
+    {!! HTML::style('/css/carousel.css') !!}
 
 </head>
 <body>
@@ -38,7 +40,7 @@
 					<span class="icon-bar"></span>
 				</button>
 
-                    {!! HTML::image('img/icon.png') !!}
+                {!! HTML::image('img/icon.png') !!}
             </div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -80,8 +82,9 @@
     @yield('carousel')
 
     @yield('categories')
+
 	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

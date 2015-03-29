@@ -28,9 +28,9 @@
                             </thead>
 
                             <tbody>
-                            @foreach($categories as $category)
+                            @foreach($categories as $index => $category)
                                 <tr>
-                                    <td>#</td>
+                                    <td>{!! ($index + 1) !!}</td>
                                     <td>
                                         {!! ucFirst($category->name) !!}
                                         {!! Form::open(['url'=>'admin/categories/destroy']) !!}
@@ -45,7 +45,7 @@
                         </table>
                         <h2>Create new Category</h2>
                         <hr>
-                        {!! Form::open(['url'=>'admin/categories', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+                        {!! Form::open(['url'=>'admin/categories/create', 'class'=>'form-horizontal', 'role'=>'form']) !!}
                         <div class="form-group">
                             {!! Form::label('name', '', ['class'=>'col-md-4 control-label']) !!}
                             <div class="col-md-6">

@@ -15,7 +15,9 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::controller('admin/categories', 'CategoriesController');
+Route::get('admin/categories', 'CategoriesController@index');
+
+//Route::controller('admin/categories', 'CategoriesController');
 
 
 Route::controllers([

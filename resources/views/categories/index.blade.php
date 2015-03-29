@@ -33,11 +33,11 @@
                                     <td>#</td>
                                     <td>
                                         {!! ucFirst($category->name) !!}
-                                        {!! Form::open(array('url'=>'admin/categories/destroy')) !!}
+                                        {!! Form::open(['url'=>'admin/categories/destroy']) !!}
                                         {!! Form::hidden('id', $category->id) !!}
                                     </td>
                                     <td>
-                                        {!! Form::submit('Delete', array('class'=>'btn btn-default')) !!}
+                                        {!! Form::submit('Delete', ['class'=>'btn btn-default']) !!}
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>
@@ -45,21 +45,19 @@
                         </table>
                         <h2>Create new Category</h2>
                         <hr>
-
-                            {!! Form::open(array('url'=>'admin/categories/create', 'class'=>'form-horizontal', 'role'=>'form')) !!}
-
-                            <div class="form-group">
-                                {!! Form::label('name', '', array('class'=>'col-md-4 control-label')) !!}
-                                <div class="col-md-6">
-                                    {!! Form::text('name', '', array('class'=>'form-control', 'value'=>'category')) !!}
-                                </div>
+                        {!! Form::open(['url'=>'admin/categories', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+                        <div class="form-group">
+                            {!! Form::label('name', '', ['class'=>'col-md-4 control-label']) !!}
+                            <div class="col-md-6">
+                                {!! Form::text('name', '', ['class'=>'form-control', 'value'=>'category']) !!}
                             </div>
-                            <div class="form-group">
-                                <div class="col-md-6 col-md-offset-4">
-                                    {!! Form::submit('Create Category', array('class'=>'btn btn-primary')) !!}
-                                    {!! Form::close() !!}
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                {!! Form::submit('Create Category', ['class'=>'btn btn-primary']) !!}
+                                {!! Form::close() !!}
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>

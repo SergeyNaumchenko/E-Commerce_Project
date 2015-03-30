@@ -11,6 +11,7 @@ return array(
     'Stringy\\' => array($vendorDir . '/danielstjules/stringy/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
+    'Intervention\\Image\\' => array($vendorDir . '/intervention/image/src/Intervention/Image'),
     'Illuminate\\Html\\' => array($vendorDir . '/illuminate/html'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),

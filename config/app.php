@@ -136,6 +136,7 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
         'Illuminate\Html\HtmlServiceProvider',
+        'Intervention\Image\ImageServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -195,7 +196,8 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form'      => 'Illuminate\Html\FormFacade',
         'HTML'      => 'Illuminate\Html\HtmlFacade',
+        'Image'     => 'Intervention\Image\ImageServiceProvider',
 
-	],
+    ],
 
 ];

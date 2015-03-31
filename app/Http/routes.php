@@ -16,6 +16,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
 Route::controller('admin/categories', 'CategoriesController');
+Route::controller('admin/products', 'ProductsController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

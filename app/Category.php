@@ -7,6 +7,10 @@ class Category extends Model
     protected $fillable = ['name'];
 
     public static $rules = ['name' => 'required|min:3|unique:categories'];
+
+    public function products() {
+        return $this->hasMany('Product');
+    }
 }
 
 

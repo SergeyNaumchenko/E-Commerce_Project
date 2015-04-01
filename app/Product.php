@@ -13,7 +13,9 @@ class Product extends Model {
         'description'  => 'required|min:20',
         'price'        => 'required|numeric',
         'availability' => 'integer',
-        'image'        => 'required|image|mines:jpeg,jpg,bmp,png,gif'
+//        'image'        => 'required|image|mines:jpeg, jpg, bmp, png, gif'
+        'image'        => ''
+
     ];
 
     public function category() {

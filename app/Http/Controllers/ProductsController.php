@@ -17,7 +17,7 @@ class ProductsController extends Controller {
 
     public function getIndex() {
 
-        $categories = [];
+        $categories = array();
 
         foreach(Category::all() as $category){
             $categories[$category->id] = $category->name;
@@ -49,7 +49,7 @@ class ProductsController extends Controller {
             $product->category_id = $request->get('category_id');
             $product->title = $request->get('description');
             $product->price = $request->get('price');
-            $image = $request::file('image');
+            $image = $request->file('image');
             $filename = date('Y-m-d-H:i:s')."-".$image->getClientOriginalName();
             Image::make($image->getRealPath())->resize(468, 249)->save('public/img/products/'.$filename);
             $product->image = 'img/products/'.$filename;

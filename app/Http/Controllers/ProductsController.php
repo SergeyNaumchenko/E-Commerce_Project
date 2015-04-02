@@ -4,8 +4,12 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Validator;
 use App\Category;
+use Image;
+
+
 
 class ProductsController extends Controller {
 
@@ -32,7 +36,7 @@ class ProductsController extends Controller {
         $product = Product::find($request->get('id'));
 
         if ($product) {
-            File::delete('public/'.$product->name);
+            unlink($product->image);
             $product->delete();
         }
 
@@ -47,11 +51,12 @@ class ProductsController extends Controller {
         if ($validator->passes()) {
             $product = new Product;
             $product->category_id = $request->get('category_id');
-            $product->title = $request->get('description');
+            $product->title = $request->get('title');
+            $product->description = $request->get('description');
             $product->price = $request->get('price');
             $image = $request->file('image');
             $filename = date('Y-m-d-H:i:s')."-".$image->getClientOriginalName();
-            Image::make($image->getRealPath())->resize(468, 249)->save('public/img/products/'.$filename);
+            Image::make($image->getRealPath())->resize(468, 249)->save('img/products/'.$filename);
             $product->image = 'img/products/'.$filename;
             $product->save();
         }
@@ -64,7 +69,7 @@ class ProductsController extends Controller {
         $product = Product::find($request->get('id'));
 
         if($product) {
-            $product->availability = $request->get('availavility');
+            $product->availability = $request->get('availability');
             $product->save();
             return redirect('admin/products/index');
         }

@@ -23,7 +23,10 @@
                             <tr>
                                 <th>#</th>
                                 <th>Product</th>
+                                <th>Name</th>
+                                <th>Description</th>
                                 <th>Delete Products</th>
+                                <th>Availability</th>
                             </tr>
                             </thead>
 
@@ -33,11 +36,17 @@
                                     <td>{!! ($index + 1) !!}</td>
                                     <td>
                                         {!! HTML::image($product->image, $product->title, ['width'=>'50'])!!}
-                                        {!! ucFirst($products->title) !!}
-                                        {!! Form::open(['url'=>'admin/products/destroy']) !!}
-                                        {!! Form::hidden('id', $product->id) !!}
+                                        {{--{!! ucFirst($product->title) !!}--}}
                                     </td>
                                     <td>
+                                        {!! $product->title !!}
+                                    </td>
+                                    <td>
+                                        {!! $product->description !!}
+                                    </td>
+                                    <td>
+                                        {!! Form::open(['url'=>'admin/products/destroy']) !!}
+                                        {!! Form::hidden('id', $product->id) !!}
                                         {!! Form::submit('Delete', ['class'=>'btn btn-default']) !!}
                                         {!! Form::close() !!}
                                     </td>
@@ -45,7 +54,7 @@
                                         {!! Form::open(['url'=>'admin/products/toggle-availability', 'class' => 'form-horizontal']) !!}
                                         {!! Form::hidden('id', $product->id) !!}
                                         {!! Form::select('availability', ['1' => 'In Stock', '0'=>'Out of Stock'], $product->availability) !!}
-                                        {!! Form::submit('Update') !!}
+                                        {!! Form::submit('Update', ['class'=> 'btn btn-default']) !!}
                                         {!! Form::close() !!}
                                     </td>
 
@@ -61,28 +70,26 @@
                                 {!! Form::select('category_id', $categories, ['class'=>'form-control', 'value'=>'category']) !!}
                             </div>
                             {!! Form::label('title', 'Product name', ['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-
-                            {!! Form::text('title', '', ['class'=>'form-control', 'value'=>'category']) !!}
-                            </div>
-                            <div class="col-md-6">
-
-                                {!! Form::label('description', '', ['class'=>'form-control', 'value'=>'category']) !!}
-                                {!! Form::textarea('description', '', ['class'=>'form-control', 'value'=>'category']) !!}
-                            </div>
-                            <div class="col-md-6">
-
-                                {!! Form::label('price', '', ['class'=>'form-control', 'value'=>'category']) !!}
-                                {!! Form::text('price', '', ['class'=>'form-control', 'value'=>'category']) !!}
-                            </div>
+                        </div>
+                        <div class="form-group">
 
                             <div class="col-md-6">
 
-                                {!! Form::label('image', 'Upload Image', ['class'=>'form-control', 'value'=>'category']) !!}
-                                {!! Form::file('image', '', ['class'=>'form-control', 'value'=>'category']) !!}
+                            {!! Form::text('title', '', ['class'=>'form-control']) !!}
                             </div>
-
-
+                        </div>
+                            <div class="col-md-6">
+                                {!! Form::label('description', '', ['class'=>'col-md-4 control-label']) !!}
+                                {!! Form::textarea('description', '', ['class'=>'form-control']) !!}
+                            </div>
+                            <div class="col-md-6">
+                                {!! Form::label('price', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
+                                {!! Form::text('price', '', ['class'=>'form-control']) !!}
+                            </div>
+                            <div class="col-md-6">
+                                {!! Form::label('image', 'Upload Image', ['class'=>'col-md-4 control-label']) !!}
+                                {!! Form::file('image', '', ['class'=>' faorm-control']) !!}
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

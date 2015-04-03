@@ -27,6 +27,7 @@
                                 <th>Description</th>
                                 <th>Delete Products</th>
                                 <th>Availability</th>
+                                <th>Update</th>
                             </tr>
                             </thead>
 
@@ -53,7 +54,10 @@
                                     <td>
                                         {!! Form::open(['url'=>'admin/products/toggle-availability', 'class' => 'form-horizontal']) !!}
                                         {!! Form::hidden('id', $product->id) !!}
-                                        {!! Form::select('availability', ['1' => 'In Stock', '0'=>'Out of Stock'], $product->availability) !!}
+                                        {!! Form::select('availability', ['1' => 'In Stock', '0'=>'Out of Stock'], $product->availability, ['class'=>'form-control']) !!}
+                                    </td>
+
+                                    <td>
                                         {!! Form::submit('Update', ['class'=> 'btn btn-default']) !!}
                                         {!! Form::close() !!}
                                     </td>
@@ -67,30 +71,37 @@
                         <div class="form-group">
                             {!! Form::label('category_id', 'Category', ['class'=>'col-md-4 control-label']) !!}
                             <div class="col-md-6">
-                                {!! Form::select('category_id', $categories, ['class'=>'form-control', 'value'=>'category']) !!}
+                                {!! Form::select('category_id', $categories, 'null', ['class'=>'form-control']) !!}
                             </div>
-                            {!! Form::label('title', 'Product name', ['class'=>'col-md-4 control-label']) !!}
                         </div>
                         <div class="form-group">
-
+                            {!! Form::label('title', 'Product name', ['class'=>'col-md-4 control-label']) !!}
                             <div class="col-md-6">
-
-                            {!! Form::text('title', '', ['class'=>'form-control']) !!}
+                                {!! Form::text('title', '', ['class'=>'form-control']) !!}
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            {!! Form::label('description', '', ['class'=>'col-md-4 control-label']) !!}
                             <div class="col-md-6">
-                                {!! Form::label('description', '', ['class'=>'col-md-4 control-label']) !!}
                                 {!! Form::textarea('description', '', ['class'=>'form-control']) !!}
                             </div>
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label('price', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
                             <div class="col-md-6">
-                                {!! Form::label('price', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
                                 {!! Form::text('price', '', ['class'=>'form-control']) !!}
                             </div>
-                            <div class="col-md-6">
-                                {!! Form::label('image', 'Upload Image', ['class'=>'col-md-4 control-label']) !!}
-                                {!! Form::file('image', '', ['class'=>' faorm-control']) !!}
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label('image', 'Upload Image', ['class'=>'col-md-4 control-label']) !!}
+                            <div class="col-md-6" style="margin-top: 6px;">
+                                {!! Form::file('image', ['class'=>'']) !!}
                             </div>
                         </div>
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 {!! Form::submit('Create Product', ['class'=>'btn btn-primary']) !!}

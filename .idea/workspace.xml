@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a2d48b7-299f-4bf8-ae42-b5e5b428a3d3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/2015-04-03-03:07:56-macbookpro.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,14 +31,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/products/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72259134" vertical-offset="435" max-vertical-offset="1830">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.875" vertical-offset="345" max-vertical-offset="1830">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="57" />
               <folding>
-                <element signature="e#5441#5465#0#HTML" expanded="true" />
+                <element signature="e#5457#5481#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.208333" vertical-offset="778" max-vertical-offset="1380">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding>
+                <element signature="e#39#61#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoriesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9219269" vertical-offset="0" max-vertical-offset="750">
+              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,12 +96,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/categories/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Product.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" />
       </list>
     </option>
   </component>
@@ -250,7 +275,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="htmlBuilde&#9;null&#9;null&#10;Image&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/intervention/image/src/Intervention/Image/Image.php&#10;app.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/app.php&#10;validation&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/lang/en/validation.php&#10;app.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php&#10;Validator.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Validation/Validator.php&#10;route.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Routing/Route.php&#10;route&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php&#10;routeColle&#9;null&#9;null&#10;app.bl&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/views/app.blade.php&#10;app&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/app.php&#10;data&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/database.php&#10;CategoriesCon&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CategoriesController.php&#10;Category.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Category.php&#10;app.css&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/app.css&#10;Model.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&#10;html&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php&#10;HTML&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php&#10;Auth&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/Auth/AuthController.php&#10;mail.p&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/mail.php&#10;connector.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php&#10;env&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/vlucas/phpdotenv/tests/fixtures/.env&#10;.env&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/vlucas/phpdotenv/tests/fixtures/.env&#10;da&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/database.php&#10;mail.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/mail.php&#10;log&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/storage/logs/laravel-2015-03-09.log&#10;mail&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/mail.php&#10;laravel.l&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/storage/logs/laravel-2015-03-09.log&#10;user&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Ca&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CategoriesController.php&#10;Pro&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;htmlBuilde&#9;null&#9;null&#10;Image&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/intervention/image/src/Intervention/Image/Image.php&#10;app.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/app.php&#10;validation&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/lang/en/validation.php&#10;app.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php&#10;Validator.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Validation/Validator.php&#10;route.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Routing/Route.php&#10;route&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php&#10;routeColle&#9;null&#9;null&#10;app.bl&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/views/app.blade.php&#10;app&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/app.php&#10;data&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/database.php&#10;CategoriesCon&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CategoriesController.php&#10;Category.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Category.php&#10;app.css&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/app.css&#10;Model.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&#10;html&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php&#10;HTML&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php&#10;Auth&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/Auth/AuthController.php&#10;mail.p&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/mail.php&#10;connector.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php&#10;env&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/vlucas/phpdotenv/tests/fixtures/.env&#10;.env&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/vlucas/phpdotenv/tests/fixtures/.env&#10;da&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/database.php&#10;mail.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/mail.php&#10;log&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/storage/logs/laravel-2015-03-09.log&#10;mail&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/mail.php&#10;laravel.l&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/storage/logs/laravel-2015-03-09.log&#10;user&#9;null&#9;null" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.notifications" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -346,6 +371,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -355,7 +381,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -634,16 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="795">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <element signature="e#39#61#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8006644" vertical-offset="16663" max-vertical-offset="17265">
@@ -700,16 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5481728" vertical-offset="540" max-vertical-offset="1290">
-          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
-          <folding>
-            <element signature="e#39#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12126246" vertical-offset="4127" max-vertical-offset="9765">
@@ -760,11 +765,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72259134" vertical-offset="435" max-vertical-offset="1830">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.875" vertical-offset="345" max-vertical-offset="1830">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="57" />
           <folding>
-            <element signature="e#5441#5465#0#HTML" expanded="true" />
+            <element signature="e#5457#5481#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.208333" vertical-offset="778" max-vertical-offset="1380">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9219269" vertical-offset="0" max-vertical-offset="750">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

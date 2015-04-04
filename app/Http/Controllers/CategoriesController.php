@@ -39,9 +39,10 @@ class CategoriesController extends Controller {
 
             $category->name = $request->input('name');
             $category->save();
+            return redirect('admin/categories/index');
         }
 
-        return redirect('admin/categories/index')->withErrors($validator);
+        return redirect('admin/categories/index')->withErrors($validator)->withInput();
     }
 
 }

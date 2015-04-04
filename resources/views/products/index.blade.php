@@ -48,7 +48,7 @@
                                     <td>
                                         {!! Form::open(['url'=>'admin/products/destroy']) !!}
                                         {!! Form::hidden('id', $product->id) !!}
-                                        {!! Form::submit('Delete', ['class'=>'btn btn-default']) !!}
+                                        {!! Form::submit('Delete', ['class'=>'btn btn-default col-md-offset-3']) !!}
                                         {!! Form::close() !!}
                                     </td>
                                     <td>

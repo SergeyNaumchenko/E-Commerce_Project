@@ -56,12 +56,18 @@ class ProductsController extends Controller {
             $product->price = $request->get('price');
             $image = $request->file('image');
             $filename = date('Y-m-d-H:i:s')."-".$image->getClientOriginalName();
-            Image::make($image->getRealPath())->resize(468, 249)->save('img/products/'.$filename);
+
+            Image::make($image->getRealPath())->resize(468, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save('img/products/' . $filename);
+
             $product->image = 'img/products/'.$filename;
             $product->save();
+
+            return redirect('admin/products/index');
         }
 
-        return redirect('admin/products/index')->withErrors($validator);
+        return redirect('admin/products/index')->withErrors($validator)->withInput();
     }
 
 

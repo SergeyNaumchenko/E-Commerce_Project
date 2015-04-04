@@ -5,13 +5,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 use App\Category;
+Use App\Http\Requests\CreateCategoryRequest;
+
 
 class CategoriesController extends Controller {
 
     public function __construct() {
-
         $this->middleware('auth');
-        $this->beforeFilter('csrf', ['on' => 'post']);
     }
 
     public function getIndex() {
@@ -30,19 +30,12 @@ class CategoriesController extends Controller {
     }
 
 
-    public function postCreate(Request $request) {
-
-        $validator = Validator::make($request->all(), Category::$rules);
-
-        if ($validator->passes()) {
-            $category = new Category;
+    public function postCreate(CreateCategoryRequest $request, Category $category) {
 
             $category->name = $request->input('name');
             $category->save();
-            return redirect('admin/categories/index');
-        }
 
-        return redirect('admin/categories/index')->withErrors($validator)->withInput();
+            return redirect('admin/categories/index');
     }
 
 }

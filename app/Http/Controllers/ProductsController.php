@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\File;
 use Validator;
 use App\Category;
 use Image;
+use App\Http\Requests\CreateProductRequest;
 
 
 
@@ -44,12 +45,8 @@ class ProductsController extends Controller {
     }
 
 
-    public function postCreate(Request $request) {
+    public function postCreate(CreateProductRequest $request, Product $product) {
 
-        $validator = Validator::make($request->all(), Product::$rules);
-
-        if ($validator->passes()) {
-            $product = new Product;
             $product->category_id = $request->get('category_id');
             $product->title = $request->get('title');
             $product->description = $request->get('description');
@@ -65,9 +62,6 @@ class ProductsController extends Controller {
             $product->save();
 
             return redirect('admin/products/index');
-        }
-
-        return redirect('admin/products/index')->withErrors($validator)->withInput();
     }
 
 

@@ -33,7 +33,7 @@
                                     <td>{!! ($index + 1) !!}</td>
                                     <td>
                                         {!! ucFirst($category->name) !!}
-                                        {!! Form::open(['url'=>'admin/categories/destroy']) !!}
+                                        {!! Form::open(['route'=>'category.destroy']) !!}
                                         {!! Form::hidden('id', $category->id) !!}
                                     </td>
                                     <td>

@@ -16,7 +16,7 @@ class CreateProductsTable extends Migration {
         {
             $table->increments('id');
             $table->integer('category_id')->unsigned();
-            $table->string('title');
+            $table->string('title')->unique();
             $table->text('description');
             $table->decimal('price', 6, 2);
             $table->boolean('availability')->default(1);

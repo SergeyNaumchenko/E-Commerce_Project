@@ -7,16 +7,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Categories</div>
                     <div class="panel-body">
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger">
-                                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
+                        @include('errors.show_errors')
                         <h2>Products</h2>
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
@@ -46,13 +37,13 @@
                                         {!! $product->description !!}
                                     </td>
                                     <td>
-                                        {!! Form::open(['url'=>'admin/products/destroy']) !!}
+                                        {!! Form::open(['method'=>'DELETE', 'route'=>'admin.products.destroy', $product->id]) !!}
                                         {!! Form::hidden('id', $product->id) !!}
                                         {!! Form::submit('Delete', ['class'=>'btn btn-default col-md-offset-3']) !!}
                                         {!! Form::close() !!}
                                     </td>
                                     <td>
-                                        {!! Form::open(['url'=>'admin/products/toggle-availability', 'class' => 'form-horizontal']) !!}
+                                        {!! Form::open(['method'=>'PATCH', 'route'=>'admin.products.update', 'class' => 'form-horizontal']) !!}
                                         {!! Form::hidden('id', $product->id) !!}
                                         {!! Form::select('availability', ['1' => 'In Stock', '0'=>'Out of Stock'], $product->availability, ['class'=>'form-control']) !!}
                                     </td>
@@ -67,7 +58,7 @@
                         </table>
                         <h2>Create new Product</h2>
                         <hr>
-                        {!! Form::open(['url'=>'admin/products/create', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+                        {!! Form::open(['route'=>'admin.products.store', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}
                         <div class="form-group">
                             {!! Form::label('category_id', 'Category', ['class'=>'col-md-4 control-label']) !!}
                             <div class="col-md-6">

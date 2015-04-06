@@ -23,7 +23,7 @@ class CreateProductRequest extends Request {
 	{
 		return [
             'category_id'  => 'required|integer',
-            'title'        => 'required|min:2',
+            'title'        => 'required|min:2|unique:products',
             'description'  => 'required|min:2',
             'price'        => 'required|numeric',
             'availability' => 'integer',

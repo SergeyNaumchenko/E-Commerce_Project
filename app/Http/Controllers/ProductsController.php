@@ -14,15 +14,10 @@ use App\Http\Requests\CreateProductRequest;
 
 class ProductsController extends Controller {
 
-    public function __construct() {
-
-        $this->middleware('auth');
-        $this->beforeFilter('csrf', ['on' => 'post']);
-    }
 
     public function getIndex() {
 
-        $categories = array();
+        $categories = [];
 
         foreach(Category::all() as $category){
             $categories[$category->id] = $category->name;
@@ -48,9 +43,10 @@ class ProductsController extends Controller {
     public function postCreate(CreateProductRequest $request, Product $product) {
 
             $product->category_id = $request->get('category_id');
-            $product->title = $request->get('title');
+            $product->title       = $request->get('title');
             $product->description = $request->get('description');
-            $product->price = $request->get('price');
+            $product->price       = $request->get('price');
+
             $image = $request->file('image');
             $filename = date('Y-m-d-H:i:s')."-".$image->getClientOriginalName();
 

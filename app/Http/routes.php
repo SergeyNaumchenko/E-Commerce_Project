@@ -12,12 +12,12 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-
 Route::get('home', 'HomeController@index');
+Route::get('store', 'StoreController@index');
 
 Route::resource('admin/categories', 'CategoriesController');
-
 Route::resource('admin/products', 'ProductsController');
+Route::resource('store', 'StoreController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

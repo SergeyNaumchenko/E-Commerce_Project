@@ -34,7 +34,7 @@
                                         {!! $product->title !!}
                                     </td>
                                     <td>
-                                        {!! $product->description !!}
+                                        <p>${!! $product->price !!}<p>
                                     </td>
                                     <td>
                                         {!! Form::open(['method'=>'DELETE', 'route'=>'admin.products.destroy', $product->id]) !!}

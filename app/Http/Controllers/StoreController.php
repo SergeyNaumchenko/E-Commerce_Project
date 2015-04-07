@@ -45,9 +45,11 @@ class StoreController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($id, Product $product)
 	{
-		return view('store.view')-with('product', Product::find($id));
+        $product = $product->find($id);
+
+		return view('store.show', compact('product'));
 	}
 
 	/**

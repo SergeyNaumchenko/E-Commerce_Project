@@ -11,9 +11,9 @@
                     <div class="thumbnail">
                         {!! HTML::image($product->image, $product->title)!!}
                         <div class="caption">
-                            <h3><a href="store/view/{!! $product->id !!}">{!! $product->title !!}</a></h3>
+                            <h3><a href="/store/{!! $product->id !!}">{!! $product->title !!}</a></h3>
                             <p>{!! $product->description !!}</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a>
+                            <p><a href="#" class="btn btn-primary" role="button">View details »</a>
                                <a href="#" class="btn btn-default" role="button">${!! $product->price!!}</a>
                             </p>
                         </div>

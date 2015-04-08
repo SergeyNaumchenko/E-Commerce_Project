@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration {
             $table->decimal('price', 6, 2);
             $table->boolean('availability')->default(1);
             $table->string('image');
+            $table->integer('quantity');
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
         });

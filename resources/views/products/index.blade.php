@@ -80,6 +80,13 @@
                         </div>
 
                         <div class="form-group">
+                            {!! Form::label('quantity', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
+                            <div class="col-md-6">
+                                {!! Form::input('number', 'quantity', '1', ['class'=>'form-control', 'min'=>'0']) !!}
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             {!! Form::label('price', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
                             <div class="col-md-6">
                                 {!! Form::text('price', '', ['class'=>'form-control']) !!}

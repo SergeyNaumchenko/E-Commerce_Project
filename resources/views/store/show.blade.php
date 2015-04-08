@@ -41,14 +41,14 @@
 
                 <p class="lead">{{ $product->description }}</p>
                 <div class="caption">
-
-                    {{--<h3><span class="label label-default">${{ $product->price }}</span></h3>--}}
+                    @if($product->availability)
+                        <h4>Availability: <small>In Stock</small></h4>
+                    @else
+                        <h4>Out of Stock</h4>
+                    @endif
                     <p>
                         <a href="#" class="btn btn-primary" role="button">Add to Cart</a>
                         <a href="#" class="btn btn-default " role="button">${!! $product->price!!}</a>
-                    {{--<div class="row">--}}
-                        {{--<input class="form-control col-md-offset-1" style="width: 2px;" type="text" value="1">--}}
-                    {{--</div>--}}
                     </p>
                 </div>
             </div>

@@ -48,6 +48,7 @@ class ProductsController extends Controller {
         $product->title       = $request->get('title');
         $product->description = $request->get('description');
         $product->price       = $request->get('price');
+        $product->quantity    = $request->get('quantity');
 
         $image = $request->file('image');
         $filename = date('Y-m-d-H:i:s')."-".$image->getClientOriginalName();

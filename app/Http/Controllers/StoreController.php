@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Category;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -7,6 +8,7 @@ use App\Product;
 use Illuminate\Http\Request;
 
 class StoreController extends Controller {
+
 
 	/**
 	 * Display a listing of the resource.
@@ -84,5 +86,11 @@ class StoreController extends Controller {
 	{
 		//
 	}
+
+    public function getCategory($cat_id) {
+
+        return view('store.category')->with('products', Product::where('category_id', '=', $cat_id)->paginate(6))
+                                     ->with('category', Category::find($cat_id));
+    }
 
 }

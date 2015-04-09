@@ -8,7 +8,8 @@
 
     {!! HTML::style('/css/app.css') !!}
     {{--<link href="{{ asset('/css/app.css') }}" rel="stylesheet">--}}
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
@@ -19,6 +20,18 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+
+    {!! HTML::style('/css/metisMenu.min.css') !!}
+    {!! HTML::style('/css/dataTables.bootstrap.css') !!}
+    {!! HTML::style('/css/dataTables.responsive.css') !!}
+    {!! HTML::style('/css/font-awesome.min.css') !!}
+    {!! HTML::style('/css/font-awesome.min.css') !!}
+    {!! HTML::style('/css/sb-admin-2.css') !!}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -85,8 +98,28 @@
 
     @yield('products')
 
+
+
+
+
 	<!-- Scripts -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+    {{--<script src="js/metisMenu.min.js"></script>--}}
+    {{--<script src="js/jquery.dataTables.min.js"></script>--}}
+    {{--<script src="js/dataTables.bootstrap.min.js"></script>--}}
+    {!! HTML::script('js/metisMenu.min.js') !!}
+    {!! HTML::script('js/jquery.dataTables.min.js') !!}
+    {!! HTML::script('js/dataTables.bootstrap.min.js') !!}
+    {!! HTML::script('js/sb-admin-2.js') !!}
+
+    <script>
+        $(document).ready(function(){
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+        });
+    </script>
+
 </body>
 </html>

@@ -2,14 +2,15 @@
 
 @section('products')
     <div class="container-fluid">
-        <div class="row">
+        <div class="row"">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">Categories</div>
                     <div class="panel-body">
                         @include('errors.show_errors')
                         <h2>Products</h2>
-                        <table class="table table-striped table-bordered table-hover">
+                        <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -56,6 +57,7 @@
                                 </tr>
                             @endforeach
                         </table>
+                        </div>
                         <h2>Create new Product</h2>
                         <hr>
                         {!! Form::open(['route'=>'admin.products.store', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}

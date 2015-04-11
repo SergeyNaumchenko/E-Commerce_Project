@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Product;
 use Illuminate\Http\Request;
-
+use Input;
 class StoreController extends Controller {
 
 
@@ -87,10 +87,25 @@ class StoreController extends Controller {
 		//
 	}
 
+    /**
+     * Display products by specified category.
+     *
+     * @param  int  $id
+     * @return Response
+     */
     public function getCategory($cat_id) {
 
         return view('store.category')->with('products', Product::where('category_id', '=', $cat_id)->paginate(6))
                                      ->with('category', Category::find($cat_id));
+    }
+
+
+    public function search(Request $request) {
+
+        $q = $request->get('q');
+
+        return view('store.search')->with('products', Product::where('title', 'LIKE', '%'.$q.'%')->get())
+                                   ->with('keyword', $q);
     }
 
 }

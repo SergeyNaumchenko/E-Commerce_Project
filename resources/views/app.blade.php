@@ -84,30 +84,17 @@
                         <li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span></a></li>
                     @endif
 				</ul>
-                <form class="navbar-form navbar-right" action="" method="">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
-			</div>
+                {!! Form::open(['url'=>'store/search/', 'method'=>'GET', 'class'=>'navbar-form navbar-right']) !!}
+                {!! Form::input('search', 'q' ,'', ['class'=>'form-control', 'placeholder'=>'Search...']) !!}
+                {!! Form::close() !!}
+            </div>
 		</div>
 	</nav>
-	@yield('content')
 
-    @yield('carousel')
+    @yield('content')
 
-    @yield('categories')
+    <!-- Scripts -->
 
-    @yield('products')
-
-
-
-
-
-	<!-- Scripts -->
-
-
-    {{--<script src="js/metisMenu.min.js"></script>--}}
-    {{--<script src="js/jquery.dataTables.min.js"></script>--}}
-    {{--<script src="js/dataTables.bootstrap.min.js"></script>--}}
     {!! HTML::script('js/metisMenu.min.js') !!}
     {!! HTML::script('js/jquery.dataTables.min.js') !!}
     {!! HTML::script('js/dataTables.bootstrap.min.js') !!}

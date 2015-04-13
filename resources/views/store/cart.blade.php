@@ -22,7 +22,7 @@
         <tbody>
         @foreach($products as $index => $product)
             <tr>
-                <td>{!! $product->id !!}</td>
+                {{--<td>{!! $product->id !!}</td>--}}
                 <td>{!! $product->name !!}</td>
                 <td>{!! $product->price !!}</td>
                 <td>{!! $product->qty !!}</td>

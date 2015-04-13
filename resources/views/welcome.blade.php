@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('carousel')
+@section('content')
 
 <!-- Carousel
 ================================================== -->

@@ -20,8 +20,13 @@
                         <h4>Availability: <small>Out of Stock</small></h4>
                     @endif
                     <p>
-                        <a href="#" class="btn btn-primary" role="button">Add to Cart</a>
-                        <a href="#" class="btn btn-default " role="button">${!! $product->price!!}</a>
+                        {!! Form::open(['url'=>'store/addtocart']) !!}
+                        {!! Form::hidden('quantity', 1) !!}
+                        {!! Form::hidden('id', $product->id) !!}
+                        {!! Form::submit('Add to Cart', ['class'=>'btn btn-default', 'role'=>'button']) !!}
+                        {!! Form::close() !!}
+                        {{--<a href="#" class="btn btn-primary" role="button">Add to Cart</a>--}}
+                        <a href="#" class="btn btn-default " role="button">${!! $product->price !!}</a>
                     </p>
                 </div>
             </div>

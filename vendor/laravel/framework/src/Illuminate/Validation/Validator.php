@@ -143,7 +143,7 @@ class Validator implements ValidatorContract {
 	 * @var array
 	 */
 	protected $implicitRules = array(
-		'Required', 'RequiredWith', 'RequiredWithAll', 'RequiredWithout', 'RequiredWithoutAll', 'RequiredIf', 'Accepted'
+		'Required', 'RequiredWith', 'RequiredWithAll', 'RequiredWithout', 'RequiredWithoutAll', 'RequiredIf', 'Accepted',
 	);
 
 	/**
@@ -276,9 +276,16 @@ class Validator implements ValidatorContract {
 
 		foreach ($data as $dataKey => $dataValue)
 		{
-			foreach ($rules as $ruleValue)
+			foreach ($rules as $ruleKey => $ruleValue)
 			{
-				$this->mergeRules("$attribute.$dataKey", $ruleValue);
+				if ( ! is_string($ruleKey))
+				{
+					$this->mergeRules("$attribute.$dataKey", $ruleValue);
+				}
+				else
+				{
+					$this->mergeRules("$attribute.$dataKey.$ruleKey", $ruleValue);
+				}
 			}
 		}
 	}
@@ -2355,7 +2362,7 @@ class Validator implements ValidatorContract {
 	}
 
 	/**
-	 * Get the custom messages for the validator
+	 * Get the custom messages for the validator.
 	 *
 	 * @return array
 	 */
@@ -2365,7 +2372,7 @@ class Validator implements ValidatorContract {
 	}
 
 	/**
-	 * Set the custom messages for the validator
+	 * Set the custom messages for the validator.
 	 *
 	 * @param  array  $messages
 	 * @return void

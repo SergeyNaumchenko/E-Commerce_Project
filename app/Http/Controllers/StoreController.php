@@ -9,8 +9,6 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Input;
-use View;
-use Gloudemans\Shoppingcart\Cart as Cart2;
 
 class StoreController extends Controller {
 
@@ -147,9 +145,15 @@ class StoreController extends Controller {
 
         $products = Cart::content();
 
-        return View::make('store.cart', compact('products'));
+        return view('store.cart', compact('products'));
     }
 
+    /**
+     * Remove a row from the cart
+     *
+     * @param  string  $rowId The rowid of the item
+     * @return boolean
+     */
     public function deleteFromCart($rowid) {
 
         Cart::remove($rowid);

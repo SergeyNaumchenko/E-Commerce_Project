@@ -5,8 +5,13 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Product;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Input;
+use View;
+use Gloudemans\Shoppingcart\Cart as Cart2;
+
 class StoreController extends Controller {
 
 
@@ -106,6 +111,50 @@ class StoreController extends Controller {
 
         return view('store.search')->with('products', Product::where('title', 'LIKE', '%'.$q.'%')->get())
                                    ->with('keyword', $q);
+    }
+
+    /**
+     * Add a row to the cart
+     *
+     * @param string|Array $id      Unique ID of the item|Item formated as array|Array of items
+     * @param string       $name    Name of the item
+     * @param int          $qty     Item qty to add to the cart
+     * @param float        $price   Price of one item
+     */
+    public function addToCart() {
+
+        $product = Product::find(Input::get('id'));
+        $defaultQty = 1;
+
+        Cart::add(array(
+
+            'id'      =>$product->id,
+            'name'    =>$product->title,
+            'price'   =>$product->price,
+            'qty'     =>$defaultQty,
+            'image'   =>$product->image
+        ));
+
+        return Redirect::to('store/cart');
+    }
+
+    /**
+     * Get the cart content
+     *
+     * @return CartCollection
+     */
+    public function getCart() {
+
+        $products = Cart::content();
+
+        return View::make('store.cart', compact('products'));
+    }
+
+    public function deleteFromCart($rowid) {
+
+        Cart::remove($rowid);
+
+        return Redirect::to('store/cart');
     }
 
 }

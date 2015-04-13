@@ -137,6 +137,7 @@ return [
 		'Illuminate\View\ViewServiceProvider',
         'Illuminate\Html\HtmlServiceProvider',
         'Intervention\Image\ImageServiceProvider',
+        'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
 
 
 		/*
@@ -197,8 +198,8 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form'      => 'Illuminate\Html\FormFacade',
         'HTML'      => 'Illuminate\Html\HtmlFacade',
-        'Image'     => 'Intervention\Image\Facades\Image'
-
+        'Image'     => 'Intervention\Image\Facades\Image',
+        'Cart'      => 'Gloudemans\Shoppingcart\Facades\Cart'
     ],
 
 ];

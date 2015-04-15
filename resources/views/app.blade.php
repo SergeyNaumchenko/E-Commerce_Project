@@ -99,6 +99,7 @@
     {!! HTML::script('js/jquery.dataTables.min.js') !!}
     {!! HTML::script('js/dataTables.bootstrap.min.js') !!}
     {!! HTML::script('js/sb-admin-2.js') !!}
+    {!! HTML::script('js/main.js') !!}
 
     <script>
         $(document).ready(function(){

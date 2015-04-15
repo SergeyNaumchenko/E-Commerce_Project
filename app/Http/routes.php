@@ -13,12 +13,8 @@
 
 Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
-//Route::get('store', 'StoreController@index');
 Route::get('store/category/{id}', 'StoreController@getCategory');
 Route::get('store/search', 'StoreController@search');
-//Route::post('store/addtocart', 'StoreController@addToCart');
-//Route::get('store/cart/{id}', 'CartController@destroy');
-//Route::get('store/cart', 'StoreController@getCart');
 
 Route::resource('store/cart', 'CartController');
 Route::resource('admin/categories', 'CategoriesController');

@@ -5,9 +5,10 @@ use App\Http\Controllers\Controller;
 
 use App\Product;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Redirect;
-use Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
+use Cart;
+
 
 class CartController extends Controller {
 
@@ -51,7 +52,7 @@ class CartController extends Controller {
             'availability' =>$product->availability
         ]);
 
-        return Redirect::to('store/cart');
+        return redirect()->to('store/cart');
 	}
 
 	/**
@@ -82,12 +83,14 @@ class CartController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($rowid)
+	public function update($rowid, Request $request)
 	{
-        $qty = Input::get('qty');
+        $qty = $request->get('qty');
         Cart::update($rowid, $qty);
 
-		return Redirect::to('store/cart');
+        if($request->ajax()) return $qty;
+
+		return redirect()->to('store/cart');
 	}
 
 	/**
@@ -100,6 +103,6 @@ class CartController extends Controller {
 	{
         Cart::remove($rowid);
 
-        return Redirect::to('store/cart');
+        return redirect()->to('store/cart');
 	}
 }

@@ -1,6 +1,5 @@
 @extends('app')
 
-
 @section('content')
 <div class="container">
     <div class="page-header">
@@ -23,15 +22,15 @@
                             <h4>Availability: <small>Out of Stock</small></h4>
                         @endif
                         <p>
-                            {!! Form::open(['method'=>'PATCH', 'route'=>['store.cart.update', $product->rowid]]) !!}
-                            {!! Form::input('number', 'qty', $product->qty, ['class'=>'form-control', 'min'=>'1', 'style'=>'width: 10%;']) !!}
+                            {!! Form::open(['data-remote', 'method'=>'PATCH', 'route'=>['store.cart.update', $product->rowid]]) !!}
+                            {!! Form::input('number', 'qty', $product->qty, ['class'=>'form-control', 'min'=>'1', 'id'=>'qty', 'style'=>'width: 10%;']) !!}
                             {!! Form::close() !!}
 
                             {!! $product->price !!}
                             {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $product->rowid]]) !!}
                             {!! Form::submit('Delete', ['class'=>'btn btn-default']) !!}
                             {!! Form::close() !!}
-                        </p>
+                            </p>
                     </div>
                 </div>
             </div>

@@ -2,5 +2,3 @@
 .DS_Store
 composer.lock
 .env
-config.php
-config2.php

@@ -20,8 +20,7 @@
                         <h4>Availability: <small>Out of Stock</small></h4>
                     @endif
                     <p>
-                        {!! Form::open(['url'=>'store/addtocart']) !!}
-                        {!! Form::hidden('quantity', 1) !!}
+                        {!! Form::open(['route'=>'store.cart.store']) !!}
                         {!! Form::hidden('id', $product->id) !!}
                         {!! Form::submit('Add to Cart', ['class'=>'btn btn-default', 'role'=>'button']) !!}
                         {!! Form::close() !!}

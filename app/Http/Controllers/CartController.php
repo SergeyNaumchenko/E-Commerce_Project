@@ -44,14 +44,12 @@ class CartController extends Controller {
 	{
         $product = Product::find(Input::get('id'));
 
-        Cart::add(array(
+        Cart::add($product->id, $product->title, $this->DEFAULT_QTY, $product->price, [
 
-            'id'      =>$product->id,
-            'name'    =>$product->title,
-            'price'   =>$product->price,
-            'qty'     =>$this->DEFAULT_QTY,
-            'image'   =>$product->image
-        ));
+            'image'        =>$product->image,
+            'description'  =>$product->description,
+            'availability' =>$product->availability
+        ]);
 
         return Redirect::to('store/cart');
 	}
@@ -84,9 +82,12 @@ class CartController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($rowid)
 	{
-		//
+        $qty = Input::get('qty');
+        Cart::update($rowid, $qty);
+
+		return Redirect::to('store/cart');
 	}
 
 	/**

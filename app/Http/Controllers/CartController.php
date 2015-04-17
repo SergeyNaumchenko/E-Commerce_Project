@@ -105,4 +105,5 @@ class CartController extends Controller {
 
         return redirect()->to('store/cart');
 	}
+
 }

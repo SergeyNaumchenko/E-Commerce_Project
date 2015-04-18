@@ -14,6 +14,7 @@
 
                 <p class="lead">{{ $product->description }}</p>
                 <div class="caption">
+                    <h4>Price: <small>${!! $product->price !!}</small></h4>
                     @if($product->availability)
                         <h4>Availability: <small>In Stock</small></h4>
                     @else
@@ -24,8 +25,6 @@
                         {!! Form::hidden('id', $product->id) !!}
                         {!! Form::submit('Add to Cart', ['class'=>'btn btn-default', 'role'=>'button']) !!}
                         {!! Form::close() !!}
-                        {{--<a href="#" class="btn btn-primary" role="button">Add to Cart</a>--}}
-                        <a href="#" class="btn btn-default " role="button">${!! $product->price !!}</a>
                     </p>
                 </div>
             </div>

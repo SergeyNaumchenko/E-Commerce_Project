@@ -23,7 +23,7 @@ class CartController extends Controller {
 	{
         $products = Cart::content();
 
-        return view('store.cart', compact('products'));
+        return view('store.cart', compact('products'))->with('total', Cart::total());
 	}
 
 	/**

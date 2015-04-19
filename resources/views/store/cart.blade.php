@@ -5,8 +5,8 @@
         <div class="page-header">
             <h1>Items in Your Cart</h1>
         </div>
-        <div class="panel panel-default">
-
+        @if($total)
+            <div class="panel panel-default">
             @foreach($products as $index => $product)
                 <div class="row featurette">
                     <div class="col-md-5" style="width: 22.6%;">
@@ -52,7 +52,7 @@
                     <div class="form-group">
                         <div class="col-md-offset-">
                             {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $product->rowid]]) !!}
-                            {!! Form::submit('Cantinue Shopping', ['class'=>'btn btn-default col-md-2', 'style'=>'margin-left: 5px;']) !!}
+                            {!! Form::submit('Continue Shopping', ['class'=>'btn btn-default col-md-2', 'style'=>'margin-left: 5px;']) !!}
                             {!! Form::close() !!}
 
                             {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $product->rowid]]) !!}
@@ -69,6 +69,9 @@
                         </div>
                     </div>
                 </div>
+            @else
+                @include('store.sections.no_items_in_cart')
+            @endif
         </div>
     </div>
 @stop

@@ -106,4 +106,19 @@ class CartController extends Controller {
         return redirect()->to('store/cart');
 	}
 
+    /**
+     * Empty the cart.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function clearCart()
+    {
+        Cart::destroy();
+
+        return redirect()->to('store/cart');
+    }
+
+
+
 }

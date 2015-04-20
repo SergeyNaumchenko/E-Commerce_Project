@@ -15,6 +15,8 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 Route::get('store/category/{id}', 'StoreController@getCategory');
 Route::get('store/search', 'StoreController@search');
+Route::get('admin/products/test', 'ProductsController@test');
+Route::get('store/cart/clearCart', 'CartController@clearCart');
 
 Route::resource('store/cart', 'CartController');
 Route::resource('admin/categories', 'CategoriesController');

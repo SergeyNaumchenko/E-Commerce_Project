@@ -24,7 +24,7 @@
     {!! HTML::style('/css/font-awesome.min.css') !!}
     {!! HTML::style('/css/sb-admin-2.css') !!}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
+
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
@@ -42,23 +42,31 @@
         <li role="presentation"><a href="#">Profile</a></li>
         <li role="presentation"><a href="#">Messages</a></li>
     </ul>
-    <div  class="col-md-3">
+    <div  class="col-md-3" style="padding-left: 0px;">
         <ul id="myTab" class="nav nav-pills nav-stacked">
             <li role="presentation" class="active">{!! HTML::link('admin/products', 'Product List') !!}</li>
             <li>{!! HTML::link('admin/products/test', 'Home') !!}</li>
             {{--<li data-toggle="pill" role="presentation"><a href="http://localhost:8000/admin/products/test">Create Products</a></li>--}}
             {{--<li data-toggle="pill" role="presentation"><a href="#">Categories</a></li>--}}
-
             {{--<li role="presentation" class="active">{!! HTML::link('admin/products', 'Product List') !!}</li>--}}
             {{--<li>{!! HTML::link('admin/products/test', 'Create Products') !!}</li>--}}
             {{--<li>{!! HTML::link('admin/categories', 'Categories') !!}</li>--}}
-            <li data-toggle="pill" role="presentation"><a  href="localhost:8000/admin/products">Messages</a></li>
+            <li><a href="#prodl" data-toggle="pill">Product List</a></li>
+            <li><a href="#cprod" data-toggle="pill">Create Product</a></li>
         </ul>
     </div>
     <div class="col-md-9 panel panel-default">
         <div class="panel-body">
+            <div id="my-tab-content" class="tab-content">
+                <div class="tab-pane" id="prodl">
+                    @yield('content')
+                </div>
+                <div class="tab-pane" id="cprod">
+                    @yield('create')
+                </div>
+            </div>
             @include('errors.show_errors')
-            @yield('content')
+            {{--@yield('content')--}}
         </div>
     </div>
 </div>
@@ -81,27 +89,18 @@
         });
     });
 
+    $(function(){
+        var hash =window.location.hash;
+        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
-//    $('#myTab a[href="http://localhost:8000/admin/products/test"]').click(function (e) {
-//        e.preventDefault()
-//        $(this).tab('show')
-//    })
-
-//    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-//        e.target // newly activated tab
-//    })
-
-    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
-        document.write(e.target); // newly activated tab
-        e.relatedTarget // previous active tab
-        e.
-        e.document.write('asdsa');
-    })
-
-//    $('#myTab a[href="http://localhost:8000/admin/products/test"]').tab('show') // Select tab by name
-//    $('#myTab a:first').tab('show') // Select first tab
-//    $('#myTab a:last').tab('show') // Select last tab
-//    $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+        $('#myTab a').click(function (e) {
+            var scrollmem = $('body').scrollTop();
+            var str = this.hash;
+            var res = str.replace(/#/g, '');
+            window.history.pushState(this.hash, 'asd', '/admin/products/' + res);
+            $('html,body').scrollTop(scrollmem);
+        });
+    });
 </script>
 
 </body>

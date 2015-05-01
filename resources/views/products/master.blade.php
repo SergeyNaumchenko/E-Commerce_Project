@@ -38,98 +38,27 @@
 @include('products.nav_bar')
 
 <div class="container col-md-10 col-md-offset-1" style="margin-top: 30px;">
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="/admin/products/">Home</a></li>
-        <li class="{{ method('1') }}" role="presentation" ><a data-pjax="#profile" href="/admin/products/1">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
-    </ul>
-
-    <div class="col-md-3" style="padding-left: 0px;">
-        <ul class="nav nav-pills nav-stacked">
-            <li class="{{ method('create2') }}" id="create2" onclick="selector('create2')"><a data-pjax="#main" href="create2">Create Product</a></li>
-            <li class="{{ method('list') }}" id="list" onclick="selector('list')"><a data-pjax="#main" href="list">Products List</a></li>
-            <li class="{{ method('categories') }}" id="categories" onclick="selector('categories')"><a data-pjax="#main" href="categories">Create Category</a></li>
-        </ul>
-    </div>
-
+    @include('products.nav_tabs')
+    @include('sidebar_links')
     <div class="col-md-9 panel panel-default">
         <div class="panel-body">
-            @include('errors.show_errors')
-
-                <div id="main">
-                    @yield('create')
-                    @yield('list')
-                    @yield('categories')
-                </div>
-
-            <div id="profile">
-                @yield('title')
+            <div id="main">
+                @yield('content')
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
 </div>
 
 <!-- Scripts -->
 <script src="../../assets/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../../assets/bower_components/jquery-pjax/jquery.pjax.js"></script>
-{{--{!! HTML::script('js/metisMenu.min.js') !!}--}}
-{{--{!! HTML::script('js/jquery.dataTables.min.js') !!}--}}
-{{--{!! HTML::script('js/dataTables.bootstrap.min.js') !!}--}}
-{{--{!! HTML::script('js/sb-admin-2.js') !!}--}}
-{{--{!! HTML::script('js/main.js') !!}--}}
+{!! HTML::script('js/metisMenu.min.js') !!}
+{!! HTML::script('js/jquery.dataTables.min.js') !!}
+{!! HTML::script('js/dataTables.bootstrap.min.js') !!}
+{!! HTML::script('js/sb-admin-2.js') !!}
+{!! HTML::script('js/main.js') !!}
+{!! HTML::script('js/tabSelector.js') !!}
 
-<script>
-
-    $(function() {
-        $(document).pjax('a');
-    });
-
-    function selector(id) {
-
-        if ('create2' == id) {
-            document.getElementById(id).className = "active";
-            document.getElementById('list').className = "";
-            document.getElementById('categories').className = "";
-        }
-
-        else if ('list' == id) {
-            document.getElementById(id).className = "active";
-            document.getElementById('create2').className = "";
-            document.getElementById('categories').className = "";
-        }
-
-        else {
-            document.getElementById(id).className = "active";
-            document.getElementById('create2').className = "";
-            document.getElementById('list').className = "";
-        }
-    }
-
-//    $(document).ready(function(){
-//        $('#dataTables-example').DataTable({
-//            responsive: true
-//        });
-//    });
-
-//    $(function(){
-//        var hash =window.location.hash;
-//        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-//
-//        $('#myTab a').click(function (e) {
-//            var scrollmem = $('body').scrollTop();
-//            var str = this.hash;
-//            var res = str.replace(/#/g, '');
-//            window.history.pushState(this.hash, 'asd', '/admin/products/' + res);
-//            $('html,body').scrollTop(scrollmem);
-//        });
-//    });
-
-
-
-</script>
 
 </body>
 </html>

@@ -11,11 +11,11 @@
 $("#tabs li").click(function() {
     $('#tabs li').removeClass("active");
     $('#' + $(this).attr('id')).addClass("active");
-    localStorage.setItem('lastTab', $(this).attr('id'));
+    //localStorage.setItem('lastTab', $(this).attr('id'));
 });
 
 // Reactivate tab after refreshing the page
-$(function() {
-    var lastTab = localStorage.getItem('lastTab');
-    if (lastTab) $('#' + lastTab).addClass("active");
-});
+//$(function() {
+//    var lastTab = localStorage.getItem('lastTab');
+//    if (lastTab) $('#' + lastTab).addClass("active");
+//});

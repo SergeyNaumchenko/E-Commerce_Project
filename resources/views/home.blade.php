@@ -1,4 +1,4 @@
-@extends('app')
+{{--@extends('products.master')--}}
 
 @section('content')
 <div class="container">

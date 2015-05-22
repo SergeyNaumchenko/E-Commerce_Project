@@ -5,10 +5,12 @@
         <div class="page-header">
             <h1>Items in Your Cart</h1>
         </div>
+        @include('flash::message')
+
         @if($total)
             <div class="panel panel-default">
             @foreach($products as $index => $product)
-                <div class="row featurette">
+                <div class="row featurette" style="margin-top: 40px;">
                     <div class="col-md-5" style="width: 22.6%;">
                         {!! HTML::image($product->options->image, $product->title, ['width'=>'200'])!!}
                     </div>
@@ -54,7 +56,7 @@
 
                             {!! HTML::link(route('store.index'), 'Continue Shopping', ['class'=>'btn btn-default col-md-2' ]) !!}
 
-                            {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $product->rowid], 'style'=>'margin-left: 5px;']) !!}
+                            {!! Form::open(['method'=>'get', 'url'=>'store/cart/saveCart', 'style'=>'margin-left: 5px;']) !!}
                             {!! Form::submit('Save Cart', ['class'=>'btn btn-default col-md-2 ', 'style'=>'margin-left: 5px;']) !!}
                             {!! Form::close() !!}
 

@@ -1,11 +1,24 @@
-@extends('app')
+{{--@extends('app')--}}
 
-@section('content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Categories</div>
+{{--@section('')--}}
+    {{--<div class="container-fluid">--}}
+        {{--<div class="row">--}}
+            {{--<div class="container col-md-10 col-md-offset-1" style="margin-top: 30px;">--}}
+                {{--<ul class="nav nav-tabs">--}}
+                    {{--<li role="presentation" class="active"><a href="#">Home</a></li>--}}
+                    {{--<li role="presentation"><a href="#">Profile</a></li>--}}
+                    {{--<li role="presentation"><a href="#">Messages</a></li>--}}
+                {{--</ul>--}}
+                {{--<div class="col-md-3 nav nav-pills nav-stacked">--}}
+                    {{--<ul class="nav nav-pills nav-stacked">--}}
+                        {{--<li role="presentation" class="active"><a href="#">Products List</a></li>--}}
+                        {{--<li role="presentation"><a href="#">Profile</a></li>--}}
+                        {{--<li role="presentation"><a href="#">Messages</a></li>--}}
+                    {{--</ul>--}}
+                {{--</div>--}}
+            {{--<div class="col-md-8 col-md-offset-2">--}}
+                <div class="col-md-9 panel panel-default">
+                    {{--<div class="panel-heading">Categories</div>--}}
                     <div class="panel-body">
                         @include('errors.show_errors')
                         <h2>Products</h2>
@@ -16,7 +29,7 @@
                                 <th>#</th>
                                 <th>Product</th>
                                 <th>Name</th>
-                                <th>Description</th>
+                                <th>Price</th>
                                 <th>Delete Products</th>
                                 <th>Availability</th>
                                 <th>Update</th>
@@ -29,7 +42,7 @@
                                     <td>{!! ($index + 1) !!}</td>
                                     <td>
                                         {!! HTML::image($product->image, $product->title, ['width'=>'50'])!!}
-                                        {{--{!! ucFirst($product->title) !!}--}}
+                                        {!! ucFirst($product->title) !!}
                                     </td>
                                     <td>
                                         {!! $product->title !!}
@@ -58,56 +71,57 @@
                             @endforeach
                         </table>
                         </div>
-                        <h2>Create new Product</h2>
-                        <hr>
-                        {!! Form::open(['route'=>'admin.products.store', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}
-                        <div class="form-group">
-                            {!! Form::label('category_id', 'Category', ['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::select('category_id', $categories, 'null', ['class'=>'form-control']) !!}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {!! Form::label('title', 'Product name', ['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('title', '', ['class'=>'form-control']) !!}
-                            </div>
-                        </div>
+                        @include('products.create_product')
+                        {{--<h2>Create new Product</h2>--}}
+                        {{--<hr>--}}
+                        {{--{!! Form::open(['route'=>'admin.products.store', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}--}}
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('category_id', 'Category', ['class'=>'col-md-4 control-label']) !!}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{!! Form::select('category_id', $categories, 'null', ['class'=>'form-control']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('title', 'Product name', ['class'=>'col-md-4 control-label']) !!}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{!! Form::text('title', '', ['class'=>'form-control']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="form-group">
-                            {!! Form::label('description', '', ['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::textarea('description', '', ['class'=>'form-control']) !!}
-                            </div>
-                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('description', '', ['class'=>'col-md-4 control-label']) !!}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{!! Form::textarea('description', '', ['class'=>'form-control']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="form-group">
-                            {!! Form::label('quantity', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
-                            <div class="col-md-6">
-                                {!! Form::input('number', 'quantity', '1', ['class'=>'form-control', 'min'=>'0']) !!}
-                            </div>
-                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('quantity', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{!! Form::input('number', 'quantity', '1', ['class'=>'form-control', 'min'=>'0']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="form-group">
-                            {!! Form::label('price', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('price', '', ['class'=>'form-control']) !!}
-                            </div>
-                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('price', '', ['class'=>'col-md-4 control-label', 'value'=>'category']) !!}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{!! Form::text('price', '', ['class'=>'form-control']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="form-group">
-                            {!! Form::label('image', 'Upload Image', ['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6" style="margin-top: 6px;">
-                                {!! Form::file('image', ['class'=>'']) !!}
-                            </div>
-                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('image', 'Upload Image', ['class'=>'col-md-4 control-label']) !!}--}}
+                            {{--<div class="col-md-6" style="margin-top: 6px;">--}}
+                                {{--{!! Form::file('image', ['class'=>'']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                {!! Form::submit('Create Product', ['class'=>'btn btn-primary']) !!}
-                                {!! Form::close() !!}
-                            </div>
-                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--<div class="col-md-6 col-md-offset-4">--}}
+                                {{--{!! Form::submit('Create Product', ['class'=>'btn btn-primary']) !!}--}}
+                                {{--{!! Form::close() !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                     </div>
                 </div>
             </div>

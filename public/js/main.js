@@ -12,15 +12,41 @@
 
         $.ajax({
             type: method,
-            url: url,
+            url : url,
             data: form.serialize(),
 
             success: function (response) {
                 //obj = JSON.parse(response);
-                $('#id').html(response);
+                //$('#id').html(response);
             }
         });
         e.preventDefault();
     });
 
 })();
+
+
+/**
+ * Load links with pjax
+ */
+$(function() {
+    $(document).pjax('a');
+});
+
+
+/**
+ * Data table functionalities
+ */
+$(document).ready(function () {
+    $(document).on('pjax:end', function () {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+
+    $('#dataTables-example').DataTable({
+        responsive: true
+    });
+
+
+});

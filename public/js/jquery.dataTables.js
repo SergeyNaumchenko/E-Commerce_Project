@@ -5010,32 +5010,33 @@
 	 *  @param {int} tn Technical note id to get more information about the error.
 	 *  @memberof DataTable#oApi
 	 */
-	function _fnLog( settings, level, msg, tn )
-	{
-		msg = 'DataTables warning: '+
-			(settings!==null ? 'table id='+settings.sTableId+' - ' : '')+msg;
-	
-		if ( tn ) {
-			msg += '. For more information about this error, please see '+
-			'http://datatables.net/tn/'+tn;
-		}
-	
-		if ( ! level  ) {
-			// Backwards compatibility pre 1.10
-			var ext = DataTable.ext;
-			var type = ext.sErrMode || ext.errMode;
-	
-			if ( type == 'alert' ) {
-				alert( msg );
-			}
-			else {
-				throw new Error(msg);
-			}
-		}
-		else if ( window.console && console.log ) {
-			console.log( msg );
-		}
-	}
+	//function _fnLog( settings, level, msg, tn )
+	//{
+	//	msg = 'DataTables warning: '+
+	//		(settings!==null ? 'table id='+settings.sTableId+' - ' : '')+msg;
+	//
+	//	if ( tn ) {
+	//		msg += '. For more information about this error, please see '+
+	//		'http://datatables.net/tn/'+tn;
+	//	}
+	//
+	//	if ( ! level  ) {
+	//		// Backwards compatibility pre 1.10
+	//		var ext = DataTable.ext;
+	//		var type = ext.sErrMode || ext.errMode;
+	//
+	//		if ( type == 'alert' ) {
+	//			//alert( msg );
+     //           console.log(msg);
+     //       }
+	//		else {
+	//			throw new Error(msg);
+	//		}
+	//	}
+	//	else if ( window.console && console.log ) {
+	//		console.log( msg );
+	//	}
+	//}
 	
 	
 	/**
@@ -14649,7 +14650,7 @@
 		                                // in 1.10, so this dead-end function is
 		                                // added to prevent errors
 	} );
-	
+
 
 	// jQuery access
 	$.fn.dataTable = DataTable;

@@ -14,8 +14,8 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
-    <script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+    {{--<link rel="stylesheet" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">--}}
+    {{--<script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>--}}
 
     {!! HTML::style('/css/metisMenu.min.css') !!}
     {!! HTML::style('/css/dataTables.bootstrap.css') !!}
@@ -23,6 +23,7 @@
     {!! HTML::style('/css/font-awesome.min.css') !!}
     {!! HTML::style('/css/font-awesome.min.css') !!}
     {!! HTML::style('/css/sb-admin-2.css') !!}
+    {!! HTML::style('/css/jquery.dataTables.css') !!}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <meta name="description" content="">

@@ -1,0 +1,32 @@
+{
+    "name": "jacobbennett/pjax",
+    "description": "PJAX for Laravel 5",
+    "keywords": ["pjax", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "email": "me@jakebennett.net", 
+            "name": "Jacob Bennett",
+            "homepage": "http://jakebennett.net"
+        },
+        {
+            "name": "Simon Stamm",
+            "email": "simon@stammtec.de"
+        },
+        {
+            "name": "Vincent Talbot",
+            "email": "vtalbot@re-bot.co"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/dom-crawler": "2.*",
+        "symfony/css-selector": "2.6.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "JacobBennett\\Pjax": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -138,6 +138,8 @@ return [
         'Illuminate\Html\HtmlServiceProvider',
         'Intervention\Image\ImageServiceProvider',
         'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider',
+
 
 
 		/*
@@ -199,7 +201,9 @@ return [
         'Form'      => 'Illuminate\Html\FormFacade',
         'HTML'      => 'Illuminate\Html\HtmlFacade',
         'Image'     => 'Intervention\Image\Facades\Image',
-        'Cart'      => 'Gloudemans\Shoppingcart\Facades\Cart'
+        'Cart'      => 'Gloudemans\Shoppingcart\Facades\Cart',
+        'Flash'     => 'Laracasts\Flash\Flash'
+
     ],
 
 ];

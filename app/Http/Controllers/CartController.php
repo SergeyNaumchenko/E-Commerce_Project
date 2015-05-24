@@ -122,48 +122,6 @@ class CartController extends Controller {
         return redirect()->to('store/cart');
     }
 
-    /**
-     * Save the cart.
-     *
-     * @return Response
-     */
-    public function saveCart()
-    {
-        $content = Cart::content();
 
-        if ($content && Auth::id()) {
-
-            $cart_id = 'SC' . rand(0, 9999999999);
-
-            foreach ($content as $product) {
-
-                DB::table('wish_lists')->insert([
-
-                    'cart_id'      => $cart_id,
-                    'user_id'      => Auth::id(),
-                    'product_id'   => $product->id,
-                    'qty'          => $product->qty,
-                    'created_at'   => date('Y-m-d-H:i:s'),
-                    'updated_at'   => date('Y-m-d-H:i:s'),
-                    'total'        => Cart::total(),
-                    'qty_of_items' => Cart::count()
-                ]);
-            }
-            Cart::destroy();
-
-            $saved_carts = DB::table('wish_lists')
-                                ->select('cart_id', 'updated_at', 'qty_of_items')
-                                ->where('user_id', Auth::id())
-                                ->distinct()
-                                ->get();
-
-            return view('store/saved_carts', compact('saved_carts'));
-        }
-
-        else {
-            Flash::error('Please Login to save or to view saved cart!');
-            return redirect()->to('store/cart');
-        }
-    }
 
 }

@@ -56,7 +56,7 @@
 
                             {!! HTML::link(route('store.index'), 'Continue Shopping', ['class'=>'btn btn-default col-md-2' ]) !!}
 
-                            {!! Form::open(['method'=>'get', 'url'=>'store/cart/saveCart', 'style'=>'margin-left: 5px;']) !!}
+                            {!! Form::open(['method'=>'post', 'route'=>'store.cart.saved_carts.store', 'style'=>'margin-left: 5px;']) !!}
                             {!! Form::submit('Save Cart', ['class'=>'btn btn-default col-md-2 ', 'style'=>'margin-left: 5px;']) !!}
                             {!! Form::close() !!}
 

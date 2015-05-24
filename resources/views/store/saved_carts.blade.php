@@ -23,12 +23,14 @@
                         <tr>
                             <td>
                                 ID Number: {{ $cart->cart_id }}
-                                <a href="#"><h4>{{ $cart->cart_id }}</h4></a>
+                                <a href="saved_carts/{{$cart->cart_id}}"><h4>{{ $cart->cart_id }}</h4></a>
                             </td>
                             <td>{{ date('F j, Y', strtotime($cart->updated_at)) }}</td>
-                            <td>{{ $cart->qty_of_items }}</td>
+                            <td><p class="col-md-offset-1">{{ $cart->qty_of_items }}</p></td>
                             <td>
-                                <button type="submit" class="btn btn-danger col-md-5"> Delete</button>
+                                {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.saved_carts.destroy', $cart->cart_id]]) !!}
+                                {!! Form::submit('Delete', ['class'=>'btn btn-danger col-md-5']) !!}
+                                {!! Form::close() !!}
                             </td>
                         </tr>
                     @endforeach

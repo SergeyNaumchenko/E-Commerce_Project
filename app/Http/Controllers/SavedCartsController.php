@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Product;
 use DB;
 use Illuminate\Http\Request;
 use Auth;
@@ -87,8 +88,18 @@ class SavedCartsController extends Controller {
 	 */
 	public function show($cart_id)
 	{
+        $records = DB::table('wish_lists')
+            ->select('product_id', 'total', 'qty')
+            ->where('cart_id', $cart_id)
+            ->where('user_id', Auth::id())
+            ->get();
 
+        foreach ($records as $index => $record) {
 
+            $products[$index] = Product::find($record->product_id);
+        }
+
+        return view('store.saved_cart', compact('products'))->with('total', $record->total);
 	}
 
 	/**

@@ -11,6 +11,7 @@ use Cart;
 use App\WishList;
 class SavedCartsController extends Controller {
 
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -89,17 +90,17 @@ class SavedCartsController extends Controller {
 	public function show($cart_id)
 	{
         $records = DB::table('wish_lists')
-            ->select('product_id', 'total', 'qty')
+            ->select('id', 'product_id', 'total', 'qty')
             ->where('cart_id', $cart_id)
             ->where('user_id', Auth::id())
             ->get();
 
         foreach ($records as $index => $record) {
-
             $products[$index] = Product::find($record->product_id);
+            $carts[$index] = WishList::find($record->id);
         }
 
-        return view('store.saved_cart', compact('products'))->with('total', $record->total);
+        return view('store.saved_cart', compact('products'))->with('total', '20')->with('carts', $carts);
 	}
 
 	/**
@@ -145,4 +146,17 @@ class SavedCartsController extends Controller {
         return redirect()->to('store/cart/saved_carts');
 	}
 
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function destroy_item($id)
+    {
+        WishList::find($id)->delete();
+
+        return redirect()->to('store/cart/saved_carts');
+    }
 }

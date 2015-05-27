@@ -9,30 +9,30 @@
 
         @if($total)
             <div class="panel panel-default">
-                @foreach($products as $index => $product)
+                @foreach($carts as $index => $cart)
                     <div class="row featurette" style="margin-top: 40px;">
                         <div class="col-md-5" style="width: 22.6%;">
-                            {!! HTML::image($product->image, $product->title, ['width'=>'200'])!!}
+                            {!! HTML::image($products[$index]->image, $products[$index]->title, ['width'=>'200'])!!}
                         </div>
                         <div class="col-md-7">
-                            <h2 class="featurette-heading" style="margin-top: 0px;">{{ $product->title }}</h2>
+                            <h2 class="featurette-heading" style="margin-top: 0px;">{{ $products[$index]->title }}</h2>
 
-                            <p class="lead">{{ $product->description }}</p>
+                            <p class="lead">{{ $products[$index]->description }}</p>
 
                             <div class="caption">
-                                <h4>Price:<small>${!! $product->price !!}</small></h4>
+                                <h4>Price:<small>${!! $products[$index]->price !!}</small></h4>
 
-                                @if($product->availability)
+                                @if($products[$index]->availability)
                                     <h4>Availability:<small>In Stock</small></h4>
                                 @else
                                     <h4>Availability:<small>Out of Stock</small></h4>
                                 @endif
                                 <p>
-                                    {!! Form::open(['data-remote', 'method'=>'PATCH', 'route'=>['store.cart.update', $product->id]]) !!}
-                                    {!! Form::input('number', 'qty', $product->quantity, ['class'=>'form-control col-md-1 ', 'min'=>'1', 'style'=>'width: 10%;']) !!}
+                                    {!! Form::open(['data-remote', 'method'=>'PATCH', 'route'=>['store.cart.update', $products[$index]->id]]) !!}
+                                    {!! Form::input('number', 'qty', $cart->qty, ['class'=>'form-control col-md-1 ', 'min'=>'1', 'style'=>'width: 10%;']) !!}
                                     {!! Form::close() !!}
 
-                                    {!! Form::open(['method'=>'get', 'url'=>['store/cart/saved_carts/destroyItem', $product->id]]) !!}
+                                    {!! Form::open(['method'=>'get', 'url'=>['store/cart/saved_carts/destroy_item', $cart->id]]) !!}
                                     {!! Form::submit('Delete', ['class'=>'btn btn-default col-md-2 col-md-offset-1', 'style'=>'margin-left: 5px;']) !!}
                                     {!! Form::close() !!}
                                 </p>
@@ -56,7 +56,7 @@
 
                             {!! HTML::link(route('store.index'), 'Continue Shopping', ['class'=>'btn btn-default col-md-2' ]) !!}
 
-                            {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $product->id]]) !!}
+                            {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $products[$index]->id]]) !!}
                             {!! Form::submit('Add All to Cart', ['class'=>'btn btn-success col-md-2 col-md-offset-7']) !!}
                             {!! Form::close() !!}
                         </div>

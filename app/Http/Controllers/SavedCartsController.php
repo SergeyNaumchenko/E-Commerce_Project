@@ -89,18 +89,10 @@ class SavedCartsController extends Controller {
 	 */
 	public function show($cart_id)
 	{
-        $records = DB::table('wish_lists')
-            ->select('id', 'product_id', 'total', 'qty')
-            ->where('cart_id', $cart_id)
-            ->where('user_id', Auth::id())
-            ->get();
+        $carts = WishList::all()->where('cart_id', $cart_id)
+                                ->where('user_id', Auth::id());
 
-        foreach ($records as $index => $record) {
-            $products[$index] = Product::find($record->product_id);
-            $carts[$index] = WishList::find($record->id);
-        }
-
-        return view('store.saved_cart', compact('products'))->with('total', '20')->with('carts', $carts);
+        return view('store.saved_cart', compact('carts'));
 	}
 
 	/**
@@ -133,11 +125,8 @@ class SavedCartsController extends Controller {
 	 */
 	public function destroy($cart_id)
 	{
-        $records = DB::table('wish_lists')
-                            ->select('id')
-                            ->where('cart_id', $cart_id)
-                            ->where('user_id', Auth::id())
-                            ->get();
+        $records = WishList::all()->where('cart_id', $cart_id)
+                                  ->where('user_id', Auth::id());
 
         foreach ($records as $record) {
             WishList::find($record->id)->delete();

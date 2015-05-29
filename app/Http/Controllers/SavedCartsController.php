@@ -156,5 +156,28 @@ class SavedCartsController extends Controller {
 
         return redirect()->to('store/cart/saved_carts');
     }
-    
+
+
+    /**
+     * Add All to The Cart.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function addAllToCart($cart_id)
+    {
+        $wishList = WishList::all()->where('cart_id', $cart_id);
+
+        foreach($wishList as $cart) {
+
+            Cart::add($cart->product->id, $cart->product->title, $cart->qty, $cart->product->price, [
+
+                'image'        => $cart->product->image,
+                'description'  => $cart->product->description,
+                'availability' => $cart->product->availability
+            ]);
+        }
+
+        return redirect()->to('store/cart');
+    }
 }

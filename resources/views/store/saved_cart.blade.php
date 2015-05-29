@@ -28,7 +28,7 @@
                                     <h4>Availability:<small>Out of Stock</small></h4>
                                 @endif
                                 <p>
-                                    {!! Form::open(['data-remote', 'method'=>'PATCH', 'route'=>['store.cart.update', $cart->product->id]]) !!}
+                                    {!! Form::open(['data-remote', 'method'=>'PATCH', 'route'=>['store.cart.saved_carts.update', $cart->id]]) !!}
                                     {!! Form::input('number', 'qty', $cart->qty, ['class'=>'form-control col-md-1 ', 'min'=>'1', 'style'=>'width: 10%;']) !!}
                                     {!! Form::close() !!}
 
@@ -56,7 +56,7 @@
 
                             {!! HTML::link(route('store.index'), 'Continue Shopping', ['class'=>'btn btn-default col-md-2' ]) !!}
 
-                            {!! Form::open(['method'=>'DELETE', 'route'=>['store.cart.destroy', $cart->product->id]]) !!}
+                            {!! Form::open(['method'=>'get', 'url'=>['store/cart/saved_carts/addAllToCart', $cart->cart_id]]) !!}
                             {!! Form::submit('Add All to Cart', ['class'=>'btn btn-success col-md-2 col-md-offset-7']) !!}
                             {!! Form::close() !!}
                         </div>

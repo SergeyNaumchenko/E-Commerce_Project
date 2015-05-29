@@ -112,9 +112,17 @@ class SavedCartsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, Request $request)
 	{
-		//
+        $qty = $request->get('qty');
+
+        $wishlist = WishList::find($id);
+        $wishlist->qty = $qty;
+        $wishlist->save();
+
+        if($request->ajax()) return $qty;
+
+        return redirect()->to('store/cart/saved_carts/' . $id);
 	}
 
 	/**
@@ -148,4 +156,5 @@ class SavedCartsController extends Controller {
 
         return redirect()->to('store/cart/saved_carts');
     }
+    
 }

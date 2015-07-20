@@ -21,7 +21,7 @@ class StoreController extends Controller {
 	public function index()
 	{
 		return view('store.index')->with('products', Product::take(4)
-            ->orderBy('created_at', 'DESC')->get());
+            ->orderBy('created_at', 'DESC')->paginate(4));
 	}
 
 	/**
@@ -98,7 +98,7 @@ class StoreController extends Controller {
      */
     public function getCategory($cat_id) {
 
-        return view('store.category')->with('products', Product::where('category_id', '=', $cat_id)->paginate(6))
+        return view('store.index')->with('products', Product::where('category_id', '=', $cat_id)->paginate(4))
                                      ->with('category', Category::find($cat_id));
     }
 

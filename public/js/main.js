@@ -4,7 +4,8 @@
 
 (function() {
 
-    $('form[data-remote]').on('submit', function(e) {
+
+    $('form[data-remote]').on('change', function(e) {
 
         var form = $(this);
         var method = form.find('input[name="_method"]').val() || 'POST';
@@ -16,14 +17,14 @@
             data: form.serialize(),
 
             success: function (response) {
-                //obj = JSON.parse(response);
-                //$('#id').html(response);
+                $('#' + response.rowid).html('$' + response.subtotal);
             }
         });
         e.preventDefault();
     });
 
 })();
+
 
 
 /**

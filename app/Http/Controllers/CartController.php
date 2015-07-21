@@ -90,8 +90,9 @@ class CartController extends Controller {
 	{
         $qty = $request->get('qty');
         Cart::update($rowid, $qty);
+        $row = Cart::get($rowid);
 
-        if($request->ajax()) return $qty;
+        if($request->ajax()) return $row;
 
 		return redirect()->to('store/cart');
 	}

@@ -91,8 +91,9 @@ class CartController extends Controller {
         $qty = $request->get('qty');
         Cart::update($rowid, $qty);
         $row = Cart::get($rowid);
+        $results = ['rowid' => $row->rowid, 'subtotal' => $row->subtotal, 'total' => Cart::total()];
 
-        if($request->ajax()) return $row;
+        if($request->ajax()) return $results;
 
 		return redirect()->to('store/cart');
 	}

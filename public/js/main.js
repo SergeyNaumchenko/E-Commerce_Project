@@ -18,6 +18,8 @@
 
             success: function (response) {
                 $('#' + response.rowid).html('$' + response.subtotal);
+                $('#subtotal').html('$' + response.total);
+                $('#total').html('$' + response.total);
             }
         });
         e.preventDefault();

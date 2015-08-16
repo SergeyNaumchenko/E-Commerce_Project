@@ -43,12 +43,24 @@ $(function() {
 $(document).ready(function () {
     $(document).on('pjax:end', function () {
         $('#dataTables-example').DataTable({
-            responsive: true
+            responsive: true,
+
+            "aoColumnDefs": [
+                { 'bSortable': false, 'aTargets': [ 3 ] },
+                { 'bSortable': false, 'aTargets': [ 4 ] },
+                { 'bSortable': false, 'aTargets': [ 5 ] }
+            ]
         });
     });
 
     $('#dataTables-example').DataTable({
-        responsive: true
+        responsive: true,
+
+        "aoColumnDefs": [
+            { 'bSortable': false, 'aTargets': [ 3 ] },
+            { 'bSortable': false, 'aTargets': [ 4 ] },
+            { 'bSortable': false, 'aTargets': [ 5 ] }
+        ]
     });
 
 

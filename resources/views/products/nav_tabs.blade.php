@@ -1,8 +1,8 @@
 <ul class="nav nav-tabs">
-    @if(Request::is('admin/products/*'))
-        <li class="active"><a href="/admin/products/"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+    @if(Request::is('admin/*'))
+        <li class="active"><a href="/admin/"><span class="glyphicon glyphicon-home"> Home</span></a></li>
     @else
-        <li class="{{ method(url('/admin/products/')) }}"><a href="/admin/products/"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li class="{{ method(url('/admin/')) }}"><a href="/admin"><span class="glyphicon glyphicon-home"> Home</span></a></li>
     @endif
 
     @if(Request::is('admin/profile/*'))

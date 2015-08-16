@@ -5,6 +5,18 @@
         <div class="page-header">
             <h1>Saved Cart</h1>
         </div>
+        <div>
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                    <td style=" border-top: 0px;border-top-left-radius: 7px; border-bottom-left-radius: 7px;">Cart Name: {{ $cart }} | <a href="#">Edit</a></td>
+                    <td style="border-top: 0px;">ID Number: {{ $cart }}</td>
+                    <td style="border-top: 0px; border-top-right-radius: 7px; border-bottom-right-radius: 7px;">Date added: May 29, 2015</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
         @include('flash::message')
 
         @if($carts)

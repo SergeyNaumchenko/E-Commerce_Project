@@ -7,9 +7,20 @@ use App\Category;
 use App\Product;
 use App\Http\Requests\CreateProductRequest;
 use Image;
+use View;
+use Auth;
+use App\User;
 
 class ProductsController extends Controller {
 
+
+    /**
+     * Only authenticated users may enter.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 	/**
 	 * Display a listing of the resource.
@@ -18,14 +29,21 @@ class ProductsController extends Controller {
 	 */
 	public function index()
 	{
-        $categories = [];
+        if(Auth::user()->is_admin()) {
 
-        foreach(Category::all() as $category){
-            $categories[$category->id] = $category->name;
+            $categories = [];
+
+            foreach(Category::all() as $category){
+                $categories[$category->id] = $category->name;
+            }
+
+            return view('products.products_table')->with('products', Product::all())
+                                                  ->with('categories', $categories);
         }
 
-        return view('products.index')->with('products', Product::all())
-                                     ->with('categories', $categories);
+        else {
+            return view('store.sections.access_denied');
+        }
 	}
 
 	/**
@@ -61,7 +79,7 @@ class ProductsController extends Controller {
         $product->image = 'img/products/'.$filename;
         $product->save();
 
-        return redirect()->route('admin.products.index');
+        return redirect()->route('admin.index');
     }
 
 	/**
@@ -101,7 +119,7 @@ class ProductsController extends Controller {
             $product->save();
         }
 
-        return redirect()->route('admin.products.index');
+        return redirect()->route('admin.index');
 	}
 
 	/**
@@ -119,7 +137,25 @@ class ProductsController extends Controller {
             $product->delete();
         }
 
-        return redirect()->route('admin.products.index');
+        return redirect()->route('admin.index');
 	}
+
+    public function getCreateView()
+    {
+        $categories = [];
+
+        foreach(Category::all() as $category){
+            $categories[$category->id] = $category->name;
+        }
+
+        return view('products.create_product')->with('products', Product::all())
+            ->with('categories', $categories);
+    }
+
+
+    public function getHomeView()
+    {
+        return view('products.home');
+    }
 
 }

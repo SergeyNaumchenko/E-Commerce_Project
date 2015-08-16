@@ -6,7 +6,7 @@
     <hr>
     @include('errors.show_errors')
 
-    {!! Form::open(['route'=>'admin.products.store', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+    {!! Form::open(['route'=>'admin.store', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form']) !!}
     <div class="form-group">
         {!! Form::label('category_id', 'Category', ['class'=>'col-md-4 control-label']) !!}
         <div class="col-md-6">

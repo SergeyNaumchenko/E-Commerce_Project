@@ -30,8 +30,8 @@
                                 <th>Product</th>
                                 <th>Name</th>
                                 <th>Price</th>
-                                <th>Delete Products</th>
-                                <th>Availability</th>
+                                <th>Remove</th>
+                                <th>Status</th>
                                 <th>Update</th>
                             </tr>
                             </thead>

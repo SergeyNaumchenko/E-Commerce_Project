@@ -12,7 +12,7 @@
                 incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam
                 repellat.
             </p>
-            {!! HTML::link(url('/auth/register'), 'Sign Up!', array('class'=>'btn btn-primary btn-large')) !!}
+            {!! HTML::link(url('/auth/register'), 'Sign Up »', array('class'=>'btn btn-primary btn-large')) !!}
             @include('store.sections.shop_by_category')
             </p>
         </header>

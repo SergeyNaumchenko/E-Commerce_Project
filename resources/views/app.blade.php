@@ -10,6 +10,7 @@
     {{--<link href="{{ asset('/css/app.css') }}" rel="stylesheet">--}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
     <!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
@@ -24,6 +25,8 @@
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
 
+    {!! HTML::style('/css/heroic-features.css') !!}
+    {!! HTML::style('/css/search.css') !!}
     {!! HTML::style('/css/metisMenu.min.css') !!}
     {!! HTML::style('/css/dataTables.bootstrap.css') !!}
     {!! HTML::style('/css/dataTables.responsive.css') !!}
@@ -39,7 +42,7 @@
 
     <!-- Custom styles for this template -->
     {{--<link href="{{ asset('/css/carousel.css') }}" rel="stylesheet">--}}
-    {!! HTML::style('/css/carousel.css') !!}
+    {{--{!! HTML::style('/css/carousel.css') !!}--}}
 
 </head>
 <body>
@@ -68,19 +71,15 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="true"><span
-                                        class="glyphicon glyphicon-user"></span> {{ ucfirst(Auth::user()->name) }} <span
+                                        class="glyphicon glyphicon-user"></span> Hello! {{ ucfirst(strtok(Auth::user()->name, ' ')) }} <span
                                         class="caret"></span></a>
                             <ul class="dropdown-menu">
-								<li><a href="{{ url('#') }}">View Account</a></li>
+                                <li><a href="{{ url('store/cart') }}">Your Cart</a></li>
                                 <li class="divider"></li>
-                                <li><a href="{{ url('#') }}">Favorites</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{ url('#') }}">Check Order Status</a></li>
+                                <li><a href="{{ url('store/cart/saved_carts') }}">Saved Carts</a></li>
                             </ul>
 						</li>
-                        <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                        <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-inbox"></span></a></li>
-                        <li><a href="{{ url('#') }}"><span class="glyphicon glyphicon-cog"></span></a></li>
+                        <li><a href="{{ url('store/cart') }}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                         <li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span></a></li>
                     @endif
 				</ul>
@@ -92,7 +91,6 @@
 	</nav>
 
     @yield('content')
-
     <!-- Scripts -->
 
     {!! HTML::script('js/metisMenu.min.js') !!}

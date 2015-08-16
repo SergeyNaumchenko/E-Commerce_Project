@@ -8,7 +8,7 @@
 
         @if($saved_carts)
             <div class="panel panel-default">
-                <table class="table">
+                <table class="table table-hover">
                     <thead>
                     <tr>
                         <th>Name</th>

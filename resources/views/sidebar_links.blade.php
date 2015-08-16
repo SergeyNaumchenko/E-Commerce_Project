@@ -10,9 +10,9 @@
             <li class="{{ method(url('admin/settings/cun')) }}" id="cun"><a data-pjax="#main" href="cun">Change Username</a></li>
             <li class="{{ method(url('admin/settings/categories')) }}" id="categories"><a data-pjax="#main" href="categories">Change Email</a></li>
         @else
-            <li class="{{ method(url('admin/products')) }}" id="create2"><a data-pjax="#main" href="/admin/products">Products List</a></li>
-            <li class="{{ method(url('admin/products/list')) }}" id="list"><a data-pjax="#main" href="/admin/products/create2">Create Product</a></li>
-            <li class="{{ method(url('admin/products/categories')) }}" id="categories"><a data-pjax="#main" href="/admin/products/categories">Create Category</a></li>
+            <li class="{{ method(url('admin')) }}" id="create2"><a data-pjax="#main" href="/admin">Products List</a></li>
+            <li class="{{ method(url('admin/create_product')) }}" id="list"><a data-pjax="#main" href="/admin/create_product">Create Product</a></li>
+            <li class="{{ method(url('admin/categories')) }}" id="categories"><a data-pjax="#main" href="/admin/categories">Create Category</a></li>
         @endif
     </ul>
 </div>

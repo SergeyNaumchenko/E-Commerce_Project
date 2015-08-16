@@ -10,7 +10,7 @@
             <br/>
             <br/>
             <div class="row">
-                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <div class="col-xs-4 col-sm-12 col-md-10 col-md-offset-1">
                     <table class="table table-hover">
                         <thead>
                         <tr>
@@ -26,22 +26,19 @@
                             <tr>
                                 <td class="col-sm-8 col-md-6">
                                     <div class="media">
-                                        <a class="thumbnail pull-left" href="#">{!!
+                                        <a class="thumbnail pull-left hidden-xs" href="#">{!!
                                             HTML::image($product->options->image, $product->title, ['width'=>'72',
                                             'height'=>'72'])!!}</a>
 
-                                        <div class="media-body">
-                                            <h4 class="media-heading" style="margin-left: 10px;"><a
+                                        <div style="padding-left: 10px;" class="media-body">
+                                            <h4 class="media-heading"><a
                                                         href="#">{{$product->name}}</a></h4>
-                                            <h5 class="media-heading" style="margin-left: 10px;"><a href="#"></a></h5>
-                                            <span style="margin-left: 10px;">Status: </span>
+                                            <span class=" hidden-xs">Status: </span>
                                             @if($product->options->availability)
-                                                <span class="text-success"><strong>In Stock
-                                                        @else
-                                                            <span class="text-danger"><strong>Out of Stock
-                                                                    @endif
-                                                                </strong>
-                                        </span>
+                                                <span class="text-success"><strong>In Stock</strong></span>
+                                            @else
+                                                <span class="text-danger"><strong>Out of Stock</strong></span>
+                                            @endif
                                         </div>
                                     </div>
                                 </td>
@@ -105,13 +102,13 @@
                                 {!! Form::close() !!}
                             </td>
                             <td>
-                                <a href="{{ route('store.index') }}" type="button" class="btn btn-default">
+                                <a href="{{ route('store.index') }}" type="button" class="btn btn-default btn-block">
                                     <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                                 </a>
                             </td>
                             <td>
                                 {!! Form::open(['route'=>'store.cart.checkout.index']) !!}
-                                <button type="submit" class="btn btn-success">
+                                <button type="submit" class="btn btn-success btn-block">
                                     Checkout <span class="glyphicon glyphicon-play"></span>
                                 </button>
                                 {!! Form::close() !!}

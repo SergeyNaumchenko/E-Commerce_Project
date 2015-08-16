@@ -3,8 +3,8 @@
 @section('content')
     <div class="container">
         @if($keyword)
-            <div class="page-header">
-                <h1>Search: Enter your search terms</h1>
+            <div class="page-header ">
+                <h3 class="well">Search: Enter your search terms</h3>
             </div>
             <div class="col-md-13">
                 <div style="width: 100%;" class="input-group">
@@ -29,17 +29,18 @@
                 </hgroup>
                 @foreach($products as $product)
                     <article class="search-result row">
-                        <div class="col-xs-12 col-sm-12 col-md-3">
+                        <div class="col-xs-12 col-sm-12 col-md-3 text-center">
                             <a href="#">
                                 {!! HTML::image($product->image, $product->title, ['class'=>' img-responsive'])!!}
                             </a>
                         </div>
                         <br/>
 
-                        <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                            <h2><a href="#" title="">{{ $product->title }}</a></h2>
+                        <div class="col-xs-12 col-sm-12 col-md-7">
+                            <h2 class="text-center"><a href="#" title="">{{ $product->title }}</a></h2>
 
-                            <p>{{ $product->description }}</p>
+                            <p class="text-center">{{ $product->description }}</p>
+                            <div class="text-center">
                             <h4>Price:
                                 <small>${!! $product->price !!}</small>
                             </h4>
@@ -52,13 +53,14 @@
                                     <small class="text-danger">Out of Stock</small>
                                 </h4>
                             @endif
-
+                            </div>
+                            <div class="text-center">
                             {!! Form::open(['route'=>'store.cart.store']) !!}
                             {!! Form::hidden('id', $product->id) !!}
                             <a href="/store/{!! $product->id !!}" class="btn btn-default ">View Details</a>
                             {!! Form::submit('Add to Cart', ['class'=>'btn btn-success', 'role'=>'button']) !!}
                             {!! Form::close() !!}
-
+                            </div>
                         </div>
                         <span class="clearfix borda"></span>
                     </article>

@@ -20,18 +20,14 @@ class SavedCartsController extends Controller {
 	public function index()
 	{
         if(Auth::id()) {
-            $saved_carts = DB::table('wish_lists')
-                ->select('cart_id', 'updated_at', 'qty_of_items')
+            $saved_carts = WishList::select('cart_id', 'updated_at', 'qty_of_items')
                 ->where('user_id', Auth::id())
-                ->distinct()
+                ->groupBy('cart_id')
                 ->get();
 
             return view('store.saved_carts', compact('saved_carts'));
         }
-
-        else {
-            return view('auth.login');
-        }
+        else return view('auth.login');
     }
 
 	/**
@@ -92,7 +88,7 @@ class SavedCartsController extends Controller {
         $carts = WishList::all()->where('cart_id', $cart_id)
                                 ->where('user_id', Auth::id());
 
-        return view('store.saved_cart', compact('carts'));
+        return view('store.saved_cart', compact('carts'))->with('cart', $cart_id);
 	}
 
 	/**
@@ -152,9 +148,9 @@ class SavedCartsController extends Controller {
      */
     public function destroy_item($id)
     {
-        WishList::find($id)->delete();
-
-        return redirect()->to('store/cart/saved_carts');
+        $wishlist = WishList::find($id);
+        $wishlist->delete();
+        return redirect()->to('store/cart/saved_carts/' . $wishlist->cart_id);
     }
 
 

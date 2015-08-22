@@ -17,7 +17,7 @@ class ProductsController extends Controller {
     /**
      * Only authenticated users may enter.
      */
-    public function __construct()
+    public function __construct(Product $products)
     {
         $this->middleware('auth');
     }
@@ -99,9 +99,17 @@ class ProductsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($id, Product $products)
 	{
-		//
+		$product = $products->find($id);
+        $categories = [];
+
+        foreach(Category::all() as $category){
+            $categories[$category->id] = $category->name;
+        }
+
+        return view('products.edit_product', compact('product'))->with('categories', $categories);
+
 	}
 
 	/**
@@ -112,12 +120,15 @@ class ProductsController extends Controller {
 	 */
 	public function update(Request $request, $id)
 	{
-        $product = Product::find($request->get('id'));
 
-        if($product) {
-            $product->availability = $request->get('availability');
-            $product->save();
-        }
+        $product = Product::find($id);
+
+        $product->fill($request->input())->save();
+//
+//        if($product) {
+//            $product->availability = $request->get('availability');
+//            $product->save();
+//        }
 
         return redirect()->route('admin.index');
 	}

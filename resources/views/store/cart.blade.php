@@ -3,9 +3,7 @@
 @section('content')
     <div class="container">
         @if($total)
-            {{--<div class="page-header well">--}}
                 <h3 class="well">Items in Your Cart</h3>
-            {{--</div>--}}
             @include('flash::message')
             <br/>
             <br/>

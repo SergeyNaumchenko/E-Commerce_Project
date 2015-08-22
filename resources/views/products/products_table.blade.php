@@ -37,16 +37,22 @@
                     </td>
 
                     <td class="col-md-1">
-                        {!! Form::open(['method'=>'PATCH', 'route'=>'admin.update', 'class' =>'form-horizontal'])!!}
+                        {!! Form::open(['method'=>'PATCH', 'url'=>'admin/' . $product->id, 'class' =>'form-horizontal'])!!}
                         {!! Form::hidden('id', $product->id) !!}
-                        {!! Form::select('availability', ['1' => 'In Stock', '0'=>'Out of Stock'], $product->availability, ['class'=>'form-control']) !!}
+                        {!! Form::select('availability', ['1' => 'In Stock', '0'=>'Out of Stock'], $product->availability, ['class'=>'form-control', 'onchange'=>'this.form.submit()']) !!}
+                        {!! Form::close() !!}
+
                     </td>
 
                     <td class="text-center col-md-1">
                         {{--{!! Form::submit('Update', ['class'=> 'btn btn-default']) !!}--}}
-                    <p data-placement="top" data-toggle="tooltip" title="Edit"><button type="submit" class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
-                        {!! Form::close() !!}
+                        {{--{!! Form::hidden('id', $product->id) !!}--}}
+                        {{--<p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>--}}
+                        {{--{!! Form::close() !!}--}}
 
+                        {!! Form::open(['method'=>'GET', 'route'=>['admin.edit', $product->id], ])!!}
+                        <p data-placement="top" data-toggle="tooltip" title="Edit"><button type="submit" class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+                        {!! Form::close() !!}
                     </td>
 
                     <td class="text-center col-md-1">

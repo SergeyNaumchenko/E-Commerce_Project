@@ -1,13 +1,6 @@
 @extends('products.master')
 
 @section('content')
-    {{--<div class="container-fluid">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-8 col-md-offset-2">--}}
-                {{--<div class="panel panel-default">--}}
-                    {{--<div class="panel-heading">Categories</div>--}}
-                    {{--<div class="panel-body">--}}
-                        {{--@include('errors.show_errors')--}}
                         <h2>Categories</h2>
                         <hr>
                         @include('errors.show_errors')
@@ -27,11 +20,13 @@
                                     <td>{!! ($index + 1) !!}</td>
                                     <td>
                                         {!! ucFirst($category->name) !!}
-                                        {!! Form::open(['method' => 'DELETE', 'route' => 'admin.categories.destroy', $category->id]) !!}
+                                        {!! Form::open(['method' => 'DELETE', 'route'=>'admin.categories.destroy', $category->id]) !!}
                                         {!! Form::hidden('id', $category->id) !!}
                                     </td>
                                     <td>
-                                        {!! Form::submit('Delete', ['class'=>'btn btn-default']) !!}
+                                        <button type="submit" class="btn btn-danger">
+                                            <span class="glyphicon glyphicon-remove"></span> Remove
+                                        </button>
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>

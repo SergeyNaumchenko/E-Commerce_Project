@@ -30,8 +30,8 @@
                 @foreach($products as $product)
                     <article class="search-result row">
                         <div class="col-xs-12 col-sm-12 col-md-3 text-center">
-                            <a href="#">
-                                {!! HTML::image($product->image, $product->title, ['class'=>' img-responsive'])!!}
+                            <a href="#" class="thumbnail" style="border: none; padding: none; display: inline;">
+                                {!! HTML::image($product->image, $product->title, ['class'=>'img-responsive'])!!}
                             </a>
                         </div>
                         <br/>

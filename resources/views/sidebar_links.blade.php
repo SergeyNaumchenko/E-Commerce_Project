@@ -13,6 +13,9 @@
             <li class="{{ method(url('admin')) }}" id="create2"><a data-pjax="#main" href="/admin">Products List</a></li>
             <li class="{{ method(url('admin/create_product')) }}" id="list"><a data-pjax="#main" href="/admin/create_product">Create Product</a></li>
             <li class="{{ method(url('admin/categories')) }}" id="categories"><a data-pjax="#main" href="/admin/categories">Create Category</a></li>
+            @if(Request::is('admin/*/edit'))
+                <li class="{{ method(Request::url()) }}" id="edit"><a data-pjax="#main" href="">Edit Product</a></li>
+            @endif
         @endif
     </ul>
 </div>

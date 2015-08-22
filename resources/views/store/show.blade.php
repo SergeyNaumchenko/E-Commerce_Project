@@ -23,7 +23,9 @@
                                     {{--<blockquote>--}}
                                         {{--<div class="row">--}}
                                             {{--<div class="col-sm-">--}}
+                                    <a class="thumbnail" style="border: none; padding: none; display: inline;">
                                                 {!! HTML::image($product->image, $product->title, ['class'=>'img-responsive'])!!}
+                                    </a>
                                                 <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
                                             {{--</div>--}}
                                         {{--</div>--}}

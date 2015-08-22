@@ -2,39 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a2d48b7-299f-4bf8-ae42-b5e5b428a3d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/User_role.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/store/sections/access_denied.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2015_05_22_030753_create_wish_list_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/macbookpro.jpg" afterPath="$PROJECT_DIR$/public/img/macbookpro.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Product.php" afterPath="$PROJECT_DIR$/app/Product.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/products/edit_product.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/2015-08-14-13:03:39-macbookpro_2013-ConvertImage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/2015-08-14-13:04:05-macbookpro.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/2015-08-14-13:04:22-iMacs.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/2015-08-14-13:06:04-macbookpro.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SavedCartsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SavedCartsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products/create_product.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/create_product.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/sections/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/sections/footer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products/nav_tabs.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/nav_tabs.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products/nav_bar.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/nav_bar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products/products_table.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/products_table.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/saved_cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/saved_cart.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/saved_carts.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/saved_carts.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/sections/shop_by_category.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/sections/shop_by_category.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sidebar_links.blade.php" afterPath="$PROJECT_DIR$/resources/views/sidebar_links.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -62,21 +44,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/store/show.blade.php">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.833333" vertical-offset="2113" max-vertical-offset="2715">
-              <caret line="155" column="24" selection-start-line="155" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.744186" vertical-offset="0" max-vertical-offset="1725">
+              <caret line="70" column="42" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/store/search.blade.php">
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/products/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.125" vertical-offset="540" max-vertical-offset="1410">
-              <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1065">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -85,33 +67,9 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="64" />
+            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="570">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.17109634" vertical-offset="1903" max-vertical-offset="2505">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-              <folding>
-                <element signature="e#39#75#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/users/test.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -124,15 +82,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SavedCartController.php" />
-        <option value="$PROJECT_DIR$/app/WishList.php" />
-        <option value="$PROJECT_DIR$/app/Product.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/heroic-features.css" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/public/css/auth.css" />
         <option value="$PROJECT_DIR$/public/css/search.css" />
-        <option value="$PROJECT_DIR$/resources/views/store/saved_cart.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SavedCartsController.php" />
         <option value="$PROJECT_DIR$/resources/views/store/check_out.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" />
@@ -145,19 +97,14 @@
         <option value="$PROJECT_DIR$/resources/views/store/sections/shop_by_category.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_26_062008_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_05_23_002257_create_wish_lists_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_11_062008_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/resources/views/products/products_table.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/nav_tabs.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/create_product.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/sidebar_links.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_28_083719_create_user_role_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_28_085328_create_user_roles_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_28_085328_create_user_role_table.php" />
@@ -169,12 +116,23 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/store/sections/footer.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/products/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/store/sections/access _denied.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/store/sections/access_denied.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/store/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/store/search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/store/saved_cart.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/store/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/products/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/products/products_table.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sidebar_links.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/categories/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/products/edit_product.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/products/nav_bar.blade.php" />
       </list>
     </option>
   </component>
@@ -243,6 +201,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E-Commerce_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E-Commerce_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -269,7 +241,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E-Commerce_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E-Commerce_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="categories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,24 +292,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Commerce_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Commerce_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,7 +302,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Produc&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;route&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/routes.php&#10;routew&#9;null&#9;null&#10;Prod&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;PRo&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Pr&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Cart&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;Car&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/SavedCartsController.php&#10;Pro&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Products&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Product&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Store&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/StoreController.php&#10;store&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/StoreController.php&#10;Save&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/app.css&#10;hero&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/heroic-features.css&#10;PRod&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;app.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/app.php&#10;composer&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/composer.json&#10;Cart.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/gloudemans/shoppingcart/src/Gloudemans/Shoppingcart/Cart.php&#10;Ca&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;prod&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;User&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/UsersController.php&#10;app.css&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/app.css&#10;css.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/assets/bower_components/jquery/src/css.js&#10;rou&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/routes.php&#10;rooute&#9;null&#9;null&#10;user&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/UsersController.php&#10;products&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Use&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/UsersController.php&#10;maste&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/views/products/master.blade.php&#10;mas&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/views/products/master.blade.php&#10;p&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;r&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/routes.php&#10;P&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;We&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/WelcomeController.php&#10;we&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/WelcomeController.php&#10;PjaxMiddleware&#9;null&#9;null&#10;bower.json&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/bower_components/jquery-pjax/bower.json&#10;categ&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CategoriesController.php&#10;autol&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/bootstrap/autoload.php&#10;ProductsController&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;cart&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;mai&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/js/main.js&#10;ca&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;m&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/js/main.js&#10;main&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/js/main.js&#10;Form&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/illuminate/html/FormBuilder.php&#10;Produ&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Product.php" />
+    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/routes.php&#10;Prod&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;cart&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;main&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/js/main.js&#10;Produc&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;routew&#9;null&#9;null&#10;PRo&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Pr&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Cart&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;Car&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/SavedCartsController.php&#10;Pro&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Products&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Product&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Store&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/StoreController.php&#10;store&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/StoreController.php&#10;Save&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/app.css&#10;hero&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/heroic-features.css&#10;PRod&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;app.php&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/config/app.php&#10;composer&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/composer.json&#10;Cart.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/gloudemans/shoppingcart/src/Gloudemans/Shoppingcart/Cart.php&#10;Ca&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;prod&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;User&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/UsersController.php&#10;app.css&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/css/app.css&#10;css.&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/assets/bower_components/jquery/src/css.js&#10;rou&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/routes.php&#10;rooute&#9;null&#9;null&#10;user&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/UsersController.php&#10;products&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;Use&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/UsersController.php&#10;maste&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/views/products/master.blade.php&#10;mas&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/resources/views/products/master.blade.php&#10;p&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;r&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/routes.php&#10;P&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;We&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/WelcomeController.php&#10;we&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/WelcomeController.php&#10;PjaxMiddleware&#9;null&#9;null&#10;bower.json&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/bower_components/jquery-pjax/bower.json&#10;categ&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CategoriesController.php&#10;autol&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/bootstrap/autoload.php&#10;ProductsController&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/ProductsController.php&#10;mai&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/js/main.js&#10;ca&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/app/Http/Controllers/CartController.php&#10;m&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/public/js/main.js&#10;Form&#9;FILE&#9;file:///Users/SpiritCrusher/Documents/Javatron/E-Commerce_Project/vendor/illuminate/html/FormBuilder.php" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -472,154 +448,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37375414" vertical-offset="0" max-vertical-offset="602">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="180" max-vertical-offset="1305">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sidebar_links.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="375">
-          <caret line="14" column="111" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/store/cart.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="15" max-vertical-offset="1995">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/PasswordBroker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9186047" vertical-offset="613" max-vertical-offset="1230">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SavedCartsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="2655">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42358804" vertical-offset="285" max-vertical-offset="930">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32392028" vertical-offset="1035" max-vertical-offset="1860">
-          <caret line="93" column="42" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Registrar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="405">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="615">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_03_23_022350_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_03_30_044646_create_products_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.833333" vertical-offset="49" max-vertical-offset="675">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_05_23_002257_create_wish_lists_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.458333" vertical-offset="49" max-vertical-offset="675">
-          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_10_000000_create_user_roles_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_11_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.208333" vertical-offset="28" max-vertical-offset="675">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="e#7#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
@@ -649,7 +477,7 @@
         <state vertical-scroll-proportion="-17.583334" vertical-offset="223" max-vertical-offset="825">
           <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
-            <element signature="e#22#58#0#PHP" expanded="true" />
+            <element signature="e#22#58#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,14 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.625" vertical-offset="750" max-vertical-offset="1755">
-          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/store/sections/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="225">
@@ -736,34 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/create_product.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.666667" vertical-offset="328" max-vertical-offset="930">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products/nav_tabs.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="375">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/nav_bar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -808,50 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14950167" vertical-offset="135" max-vertical-offset="1065">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/products_table.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1035">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/store/sections/display_products.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/store/category.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/store/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.833333" vertical-offset="2113" max-vertical-offset="2715">
-          <caret line="155" column="24" selection-start-line="155" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/store/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.125" vertical-offset="540" max-vertical-offset="1410">
-          <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -869,26 +625,251 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1666666" vertical-offset="28" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SavedCartsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4136212" vertical-offset="1768" max-vertical-offset="2655">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0173913" vertical-offset="645" max-vertical-offset="1860">
+          <caret line="93" column="100" selection-start-line="93" selection-start-column="100" selection-end-line="93" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7906977" vertical-offset="1078" max-vertical-offset="1680">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/store/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="90" max-vertical-offset="2745">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="e#1264#1317#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/store/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="1410">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/store/saved_cart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-71.25" vertical-offset="0" max-vertical-offset="3030">
+          <caret line="114" column="127" selection-start-line="114" selection-start-column="127" selection-end-line="114" selection-end-column="127" />
+          <folding>
+            <element signature="e#5066#5093#0#HTML" expanded="true" />
+            <element signature="e#5960#5986#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/create_product.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.458333" vertical-offset="328" max-vertical-offset="930">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17109634" vertical-offset="1903" max-vertical-offset="2505">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state vertical-scroll-proportion="16.166666" vertical-offset="1528" max-vertical-offset="2670">
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
           <folding>
             <element signature="e#39#75#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/products_table.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8333333" vertical-offset="493" max-vertical-offset="1125">
+          <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sidebar_links.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_10_000000_create_user_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_11_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.208333" vertical-offset="28" max-vertical-offset="675">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/categories/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37707642" vertical-offset="193" max-vertical-offset="915">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_05_23_002257_create_wish_lists_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8903654" vertical-offset="49" max-vertical-offset="675">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_03_23_022350_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/store/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/store/cart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3488372" vertical-offset="645" max-vertical-offset="1965">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="59" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/edit_product.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0465117" vertical-offset="0" max-vertical-offset="825">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="570">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/nav_bar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22425249" vertical-offset="0" max-vertical-offset="690">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.744186" vertical-offset="0" max-vertical-offset="1725">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

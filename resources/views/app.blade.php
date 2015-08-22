@@ -68,19 +68,10 @@
                         <li><a href="{{ url('/auth/login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         <li><a href="{{ url('/auth/register') }}"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                     @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-expanded="true"><span
-                                        class="glyphicon glyphicon-user"></span> Hello! {{ ucfirst(strtok(Auth::user()->name, ' ')) }} <span
-                                        class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ url('store/cart') }}">Your Cart</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{ url('store/cart/saved_carts') }}">Saved Carts</a></li>
-                            </ul>
-						</li>
-                        <li><a href="{{ url('store/cart') }}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                        <li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span></a></li>
+                        <li><a><span class="glyphicon glyphicon-user "></span> Hello! {{ ucfirst(strtok(Auth::user()->name, ' ')) }}</a></li>
+                        <li><a href="{{ url('store/cart') }}"><span class="glyphicon glyphicon-shopping-cart "></span><span class="hidden-lg"> Shopping Cart</span></a></li>
+                        <li><a href="{{ url('store/cart/saved_carts') }}"><span class="glyphicon glyphicon-save "></span><span class="hidden-lg"> Saved Cart</span></a></li>
+                        <li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span><span class="hidden-lg"> Log Out</span></a></li>
                     @endif
 				</ul>
                 {!! Form::open(['url'=>'store/search/', 'method'=>'GET', 'class'=>'navbar-form navbar-right']) !!}
@@ -104,6 +95,13 @@
             $('#dataTables-example').DataTable({
                 responsive: true
             });
+        });
+
+        $('.nav-tabs').on('show.bs.tab', 'a', function(event) {
+            event.preventDefault();
+        });
+        $('.nav-tabs').on('hide.bs.tab', 'a', function(event) {
+            event.preventDefault();
         });
     </script>
 
